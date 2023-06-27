@@ -1,10 +1,10 @@
 import "./SectionTitle.css"
 
-const SectionTitle = () => {
+const SectionTitle = ({ title, subTitle }) => {
    return (
       <div className="text-center about">
-         <h1 className="title">About Me</h1>
-         <h2 className="sub-title">Know Me More</h2>
+         <h1 className="title">{title}</h1>
+         <h2 className="sub-title">{subTitle}</h2>
          <hr />
       </div>
    );

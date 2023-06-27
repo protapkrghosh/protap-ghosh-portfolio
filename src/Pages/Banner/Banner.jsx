@@ -31,7 +31,7 @@ const Banner = () => {
          <Container>
             <div className='flex items-center justify-center' data-aos="fade-up" data-aos-duration="1000">
                <div className='w-full'>
-                  <h1 className='text-5xl font-bold'>Hello ! I&apos;m Protap Ghosh</h1>
+                  <h1 className='text-6xl font-bold'>Hello ! I&apos;m Protap Ghosh</h1>
                   <h2 className='text-3xl font-bold mt-5 mb-8'>
                      <span className='text-[#20C997]'>
                         {text}
