@@ -1,11 +1,22 @@
-import React from 'react';
+import { useCallback } from "react";
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import Container from '../../Components/Container';
 import image from "../../assets/protap-ghosh.png"
 import './Banner.css'
 import { FaDownload } from 'react-icons/fa';
+import Particles from "react-tsparticles";
+import { loadFull } from "tsparticles";
 
 const Banner = () => {
+   const particlesInit = useCallback(async engine => {
+      console.log(engine);
+      await loadFull(engine);
+   }, []);
+
+   const particlesLoaded = useCallback(async container => {
+      await console.log(container);
+   }, []);
+
    const [text] = useTypewriter({
       words: ['MERN Stack Developer', 'Font-end Developer', 'Web Developer'],
       loop: {},
@@ -52,6 +63,94 @@ const Banner = () => {
                </div>
             </div>
          </Container>
+
+         <Particles
+            id="tsparticles"
+            init={particlesInit}
+            loaded={particlesLoaded}
+            options={{
+               background: {
+                  color: {
+                     
+                  },
+               },
+               fullScreen: {
+                  enable: true,
+                  zIndex: 1,
+               },
+               style: {
+                  position: "absolute",
+                  width: "100%",
+                  height: "90%"
+               },
+               fpsLimit: 120,
+               interactivity: {
+                  events: {
+                     onClick: {
+                        enable: false,
+                        mode: "push",
+                     },
+                     onHover: {
+                        enable: true,
+                        mode: "repulse",
+                     },
+                     resize: true,
+                  },
+                  modes: {
+                     push: {
+                        quantity: 4,
+                     },
+                     repulse: {
+                        distance: 150,
+                        duration: 0.4,
+                     },
+                  },
+               },
+               particles: {
+                  color: {
+                     value: "#00ccff",
+                  },
+                  links: {
+                     color: "#20C997",
+                     distance: 150,
+                     enable: true,
+                     opacity: 0.5,
+                     width: 1,
+                  },
+                  collisions: {
+                     enable: true,
+                  },
+                  move: {
+                     direction: "none",
+                     enable: true,
+                     outModes: {
+                        default: "bounce",
+                     },
+                     random: false,
+                     speed: 3,
+                     straight: false,
+                  },
+                  number: {
+                     density: {
+                        enable: true,
+                        area: 800,
+                     },
+                     value: 80,
+                  },
+                  opacity: {
+                     value: 0.5,
+                  },
+                  shape: {
+                     type: "circle",
+                  },
+                  size: {
+                     value: { min: 1, max: 5 },
+                  },
+               },
+               detectRetina: true,
+            }}
+         />
+
       </div>
    );
 };
