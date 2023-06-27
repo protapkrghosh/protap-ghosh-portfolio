@@ -1,24 +1,24 @@
-/* .about {
+.tech-skill {
    position: relative;
 }
 
-.title {
-   color: #3E444A;
+.summary {
+   color: #292D32;
    font-size: 128px;
    font-weight: bold;
    text-transform: uppercase;
 }
 
-.sub-title {
+.skill {
    color: #ffffff;
    font-size: 40px;
    font-weight: bold;
    position: absolute;
    top: 35%;
-   left: 39%;
+   left: 45%;
 }
 
-.about hr {
+.tech-skill hr {
    width: 5em;
    background: #20C997;
    border-top: 0;
@@ -26,22 +26,22 @@
    border-right: 0;
    padding: 2px;
    position: absolute;
-   top: 66%;
-   left: 47%;
+   top: 71%;
+   left: 48%;
 }
 
 @media only screen and (max-width: 768px) {
-   .title {
+   .summary {
       font-size: 80px;
    }
 
-   .sub-title {
+   .skill {
       font-size: 35px;
       top: 31%;
       left: 36%;
    }
 
-   .about hr {
+   .tech-skill hr {
       top: 70%;
       left: 47%;
    }
@@ -58,9 +58,9 @@
       left: 38%;
    }
 
-   .about hr {
+   .tech-skill hr {
       width: 4em;
       top: 66%;
       left: 45%;
    }
-} */
+}
