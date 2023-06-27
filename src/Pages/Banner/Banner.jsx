@@ -27,7 +27,7 @@ const Banner = () => {
    }
 
    return (
-      <div className='bg-[#212529] text-[#798792] pt-24 pb-32'>
+      <div className='bg-[#212529] text-[#798792] min-h-screen pt-32'>
          <Container>
             <div className='flex items-center justify-center' data-aos="fade-up" data-aos-duration="1000">
                <div className='w-full'>
@@ -81,7 +81,7 @@ const Banner = () => {
                style: {
                   position: "absolute",
                   width: "100%",
-                  height: "90%"
+                  height: "100%"
                },
                fpsLimit: 120,
                interactivity: {

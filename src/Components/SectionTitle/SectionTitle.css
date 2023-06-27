@@ -1,0 +1,66 @@
+.about {
+   position: relative;
+}
+
+.title {
+   color: #3E444A;
+   font-size: 128px;
+   font-weight: bold;
+   text-transform: uppercase;
+}
+
+.sub-title {
+   color: #ffffff;
+   font-size: 40px;
+   font-weight: bold;
+   position: absolute;
+   top: 35%;
+   left: 39%;
+}
+
+.about hr {
+   width: 5em;
+   background: #20C997;
+   border-top: 0;
+   border-left: 0;
+   border-right: 0;
+   padding: 2px;
+   position: absolute;
+   top: 66%;
+   left: 47%;
+}
+
+@media only screen and (max-width: 768px) {
+   .title {
+      font-size: 80px;
+   }
+
+   .sub-title {
+      font-size: 35px;
+      top: 31%;
+      left: 36%;
+   }
+
+   .about hr {
+      top: 70%;
+      left: 47%;
+   }
+}
+
+@media only screen and (max-width: 576px) {
+   .title {
+      font-size: 50px;
+   }
+
+   .sub-title {
+      font-size: 20px;
+      top: 27%;
+      left: 38%;
+   }
+
+   .about hr {
+      width: 4em;
+      top: 66%;
+      left: 45%;
+   }
+}

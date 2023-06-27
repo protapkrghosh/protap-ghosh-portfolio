@@ -1,8 +1,9 @@
+import SectionTitle from "../../Components/SectionTitle/SectionTitle";
 
 const AboutMe = () => {
    return (
-      <div className="hero min-h-screen text-6xl">
-         Hello
+      <div className="bg-[#343A40]">
+         <SectionTitle />
       </div>
    );
 };
