@@ -29,7 +29,7 @@ const Banner = () => {
    return (
       <div className='bg-[#212529] text-[#798792] min-h-screen pt-32'>
          <Container>
-            <div className='flex items-center justify-center' data-aos="fade-up" data-aos-duration="1000">
+            <div className='flex items-center justify-center' data-aos="fade-up" data-aos-duration="1500">
                <div className='w-full'>
                   <h1 className='text-6xl font-bold'>Hello ! I&apos;m Protap Ghosh</h1>
                   <h2 className='text-3xl font-bold mt-5 mb-8'>
