@@ -11,14 +11,17 @@ const Banner = () => {
       loop: {},
    });
 
+   const handleDownload = () => {
+      window.open('https://drive.google.com/u/1/uc?id=1Q7wzCfqI_aT_PwkPPqWC12cne-o9u_79&export=download', '_parent');
+   }
+
    return (
       <div className='bg-[#212529] text-[#798792] pt-24 pb-32'>
          <Container>
             <div className='flex items-center justify-center' data-aos="fade-up" data-aos-duration="1000">
                <div className='w-full'>
-                  <h1 className='text-5xl font-bold'>Hello ! 👋 I&apos;m Protap Ghosh</h1>
-                  <h2 className='text-2xl font-bold mt-5 mb-8'>
-                     I am a {' '}
+                  <h1 className='text-5xl font-bold'>Hello ! I&apos;m Protap Ghosh</h1>
+                  <h2 className='text-3xl font-bold mt-5 mb-8'>
                      <span className='text-[#20C997]'>
                         {text}
                      </span>
@@ -31,7 +34,7 @@ const Banner = () => {
 
                   <button className='btn btn-outline border-[#20C997] hover:border-[#20C997] text-[16px] text-[#20C997] capitalize border-2 rounded-full px-8 mt-8 hover:bg-[#20C997]'>Hire Me</button>
 
-                  <button className='btn border-none text-[16px] text-white capitalize border-2 rounded-full px-8 mt-8 ms-5 bg-[#20C997] hover:bg-[#1BAA80]'>Download CV <FaDownload /></button>
+                  <button onClick={handleDownload} className='btn border-none text-[16px] text-white capitalize border-2 rounded-full px-8 mt-8 ms-5 bg-[#20C997] hover:bg-[#1BAA80]'>Resume <FaDownload /></button>
                </div>
 
                <div className='w-1/2 flex justify-end items-center' data-aos="fade-left" data-aos-duration="1500">
@@ -46,12 +49,6 @@ const Banner = () => {
                         </div>
                      </div>
                   </div>
-
-                  {/* <div className="avatar">
-                     <div className="w-3/4 rounded-full ring ring-[#20C997] shadow-xl shadow-[#69727A] ring-offset-[#798792] ring-offset-2">
-                        <img src={image} />
-                     </div>
-                  </div> */}
                </div>
             </div>
          </Container>
