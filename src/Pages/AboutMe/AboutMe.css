@@ -1,3 +1,4 @@
+/* Section Header */
 .about {
    position: relative;
 }
@@ -30,6 +31,7 @@
    left: 47%;
 }
 
+/* Responsive */
 @media only screen and (max-width: 768px) {
    .about-title {
       font-size: 90px;

@@ -18,7 +18,7 @@ const Banner = () => {
    }, []);
 
    const [text] = useTypewriter({
-      words: ['MERN Stack Developer', 'Font-end Developer', 'Web Developer'],
+      words: ['MERN Stack Developer', 'Font-end Developer', 'Junior Web Developer'],
       loop: {},
    });
 
