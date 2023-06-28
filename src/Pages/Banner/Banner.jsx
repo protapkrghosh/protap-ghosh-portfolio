@@ -29,17 +29,17 @@ const Banner = () => {
    return (
       <div className='bg-[#212529] text-[#798792] min-h-screen pt-32'>
          <Container>
-            <div className='flex items-center justify-center' data-aos="fade-up" data-aos-duration="1500">
-               <div className='w-full'>
-                  <h1 className='text-6xl font-bold'>Hello ! I&apos;m Protap Ghosh</h1>
-                  <h2 className='text-3xl font-bold mt-5 mb-8'>
+            <div className='banner' data-aos="fade-up" data-aos-duration="1500">
+               <div className="banner-content">
+                  <h1>Hello ! I&apos;m Protap Ghosh</h1>
+                  <h2>
                      <span className='text-[#20C997]'>
                         {text}
                      </span>
                      <Cursor />
                   </h2>
 
-                  <p className='w-4/5 text-[18px] font-semibold'>
+                  <p className='lg:w-4/5 text-[18px] font-semibold'>
                      As a self-taught programmer, I have honed my skills in the MERN stack, demonstrating proficiency in JavaScript, HTML, and CSS. I possess a strong understanding of these technologies and strive to stay updated with the latest industry trends and advancements. My commitment to continuous learning allows me to adapt to evolving programming practices.
                   </p>
 
@@ -48,7 +48,7 @@ const Banner = () => {
                   <button onClick={handleDownload} className='btn border-none text-[16px] text-white capitalize border-2 rounded-full px-8 mt-8 ms-5 bg-[#20C997] hover:bg-[#1BAA80]'>Resume <FaDownload /></button>
                </div>
 
-               <div className='w-1/2 flex justify-end items-center' data-aos="fade-left" data-aos-duration="1500">
+               <div className='banner-image' data-aos="fade-left" data-aos-duration="1500">
                   <div className='box'>
                      <div className='content'>
                         <img src={image} alt="Image" />
@@ -71,7 +71,7 @@ const Banner = () => {
             options={{
                background: {
                   color: {
-                     
+
                   },
                },
                fullScreen: {

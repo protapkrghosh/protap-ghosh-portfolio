@@ -2,6 +2,7 @@ import { FaDownload } from "react-icons/fa";
 import Container from "../../Components/Container";
 import image from "../../assets/protap.png"
 import CountUp from "react-countup";
+import './AboutMe.css'
 
 const AboutMe = () => {
    const handleDownload = () => {
