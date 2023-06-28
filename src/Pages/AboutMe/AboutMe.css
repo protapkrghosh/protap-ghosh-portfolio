@@ -2,14 +2,14 @@
    position: relative;
 }
 
-.title {
+.about-title {
    color: #3E444A;
    font-size: 128px;
    font-weight: bold;
    text-transform: uppercase;
 }
 
-.sub-title {
+.about-subTitle {
    color: #ffffff;
    font-size: 40px;
    font-weight: bold;
@@ -30,37 +30,37 @@
    left: 47%;
 }
 
-/* @media only screen and (max-width: 768px) {
-   .title {
-      font-size: 80px;
+@media only screen and (max-width: 768px) {
+   .about-title {
+      font-size: 90px;
    }
 
-   .sub-title {
-      font-size: 35px;
+   .about-subTitle {
+      font-size: 30px;
       top: 31%;
       left: 36%;
    }
 
    .about hr {
-      top: 70%;
-      left: 47%;
+      top: 65%;
+      left: 45%;
    }
 }
 
 @media only screen and (max-width: 576px) {
-   .title {
-      font-size: 50px;
+   .about-title {
+      font-size: 60px;
    }
 
-   .sub-title {
+   .about-subTitle {
       font-size: 20px;
-      top: 27%;
-      left: 38%;
+      top: 33%;
+      left: 36%;
    }
 
    .about hr {
+      top: 65%;
+      left: 43%;
       width: 4em;
-      top: 66%;
-      left: 45%;
    }
-} */
+}

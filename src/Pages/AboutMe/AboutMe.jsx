@@ -13,8 +13,8 @@ const AboutMe = () => {
       <div className="bg-[#343A40] pt-10 pb-16">
          <Container>
             <div className="text-center about" data-aos="fade-up" data-aos-duration="1000">
-               <h1 className="title">About Me</h1>
-               <h2 className="sub-title">Know Me More</h2>
+               <h1 className="about-title">About Me</h1>
+               <h2 className="about-subTitle">Know Me More</h2>
                <hr />
             </div>
 

@@ -32,11 +32,11 @@
 
 @media only screen and (max-width: 768px) {
    .summary {
-      font-size: 80px;
+      font-size: 90px;
    }
 
    .skill {
-      font-size: 35px;
+      font-size: 30px;
       top: 31%;
       left: 36%;
    }
@@ -48,19 +48,19 @@
 }
 
 @media only screen and (max-width: 576px) {
-   .title {
-      font-size: 50px;
+   .summary {
+      font-size: 60px;
    }
 
-   .sub-title {
+   .skill {
       font-size: 20px;
-      top: 27%;
-      left: 38%;
+      top: 29%;
+      left: 43%;
    }
 
    .tech-skill hr {
       width: 4em;
       top: 66%;
-      left: 45%;
+      left: 44%;
    }
 }
