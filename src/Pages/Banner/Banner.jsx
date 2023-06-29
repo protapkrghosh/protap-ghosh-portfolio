@@ -7,6 +7,8 @@ import { FaDownload } from 'react-icons/fa';
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import ScrollToTop from "react-scroll-to-top";
+import NavBar from "../../Shared/NavBar/NavBar";
+import Headroom from "react-headroom";
 
 const Banner = () => {
    const particlesInit = useCallback(async engine => {
@@ -28,9 +30,13 @@ const Banner = () => {
    }
 
    return (
-      <div className='bg-[#212529] text-[#798792] min-h-screen pt-32'>
+      <div className='bg-[#212529] text-[#798792] min-h-screen'>
+         <Headroom>
+            <NavBar></NavBar>
+         </Headroom>
+
          <Container>
-            <div className='banner' data-aos="fade-up" data-aos-duration="1500">
+            <div className='banner pt-20' data-aos="fade-up" data-aos-duration="1500">
                <div className="banner-content">
                   <h1>Hello ! I&apos;m Protap Ghosh</h1>
                   <h2>
@@ -151,13 +157,13 @@ const Banner = () => {
                detectRetina: true,
             }}
          /> */}
-         
+
          {/* Scroll Down Animation */}
          <a href="#about-me">
             <div className="scroll-down"></div>
          </a>
 
-         <ScrollToTop smooth top="400" style={{ backgroundColor: "#20aa81", display: "flex", justifyContent: "center", alignItems: "center", borderRadius: "50%", padding: "10px" }}/>
+         <ScrollToTop smooth top="400" style={{ backgroundColor: "#20aa81", display: "flex", justifyContent: "center", alignItems: "center", borderRadius: "50%", padding: "10px" }} />
       </div>
    );
 };

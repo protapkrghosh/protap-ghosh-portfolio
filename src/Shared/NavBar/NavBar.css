@@ -1,0 +1,17 @@
+.menu-link {
+   font-size: 15px;
+   font-weight: 600;
+   margin-left: 25px;
+   cursor: pointer;
+   transition: 0.4s;
+   z-index: 9999;
+}
+
+/* .menu-link.active {
+   color: #20c997;
+} */
+
+.menu-link:hover {
+   color: #20c997;
+}
+

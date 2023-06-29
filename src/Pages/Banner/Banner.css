@@ -23,7 +23,7 @@
    background-color: #2A2C39;
    border-radius: 50%;
    overflow: hidden;
-   z-index: 9999;
+   z-index: 0;
 }
 
 .box::before {
