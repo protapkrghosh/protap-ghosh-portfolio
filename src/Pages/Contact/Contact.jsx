@@ -14,7 +14,7 @@ const Contact = () => {
                <hr />
             </div>
 
-            <div className="py-20 contact-form">
+            <div className="pt-5 contact-form">
                <div className='address' data-aos="fade-right" data-aos-duration="1500">
                   <div>
                      <p className="text-2xl text-[#D3E3E4] font-semibold uppercase mb-6">Address</p>
@@ -45,7 +45,7 @@ const Contact = () => {
                </div>
 
                <div className="message-field" data-aos="zoom-in" data-aos-duration="1500">
-                  <h2 className="text-2xl text-white font-semibold uppercase">Write me a message</h2>
+                  <h2 className="text-2xl text-[#D3E3E4] font-semibold uppercase">Write me a message</h2>
                   <form>
                      <div className="form-field">
                         <div className="form-control">
