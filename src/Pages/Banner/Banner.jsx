@@ -6,6 +6,7 @@ import './Banner.css'
 import { FaDownload } from 'react-icons/fa';
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
+import ScrollToTop from "react-scroll-to-top";
 
 const Banner = () => {
    const particlesInit = useCallback(async engine => {
@@ -150,7 +151,8 @@ const Banner = () => {
                detectRetina: true,
             }}
          /> */}
-
+         
+         <ScrollToTop smooth top="400" style={{ backgroundColor: "#20aa81", display: "flex", justifyContent: "center", alignItems: "center", borderRadius: "50%", padding: "10px" }}/>
       </div>
    );
 };
