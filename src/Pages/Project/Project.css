@@ -1,25 +1,25 @@
-/* About Header */
-.about {
+/* Project Header */
+.project {
    position: relative;
 }
 
-.about-title {
+.project-title {
    color: #3E444A;
    font-size: 128px;
    font-weight: bold;
    text-transform: uppercase;
 }
 
-.about-subTitle {
+.project-subTitle {
    color: #ffffff;
    font-size: 40px;
    font-weight: bold;
    position: absolute;
    top: 35%;
-   left: 39%;
+   left: 43%;
 }
 
-.about hr {
+.project hr {
    width: 5em;
    background: #20C997;
    border-top: 0;
@@ -27,41 +27,41 @@
    border-right: 0;
    padding: 2px;
    position: absolute;
-   top: 66%;
+   top: 69%;
    left: 47%;
 }
 
 /* Responsive */
 @media only screen and (max-width: 768px) {
-   .about-title {
+   .project-title {
       font-size: 90px;
    }
 
-   .about-subTitle {
+   .project-subTitle {
       font-size: 30px;
-      top: 31%;
-      left: 36%;
+      top: 33%;
+      left: 41%;
    }
 
-   .about hr {
-      top: 65%;
+   .project hr {
+      top: 68%;
       left: 45%;
    }
 }
 
 @media only screen and (max-width: 576px) {
-   .about-title {
+   .project-title {
       font-size: 60px;
    }
 
-   .about-subTitle {
+   .project-subTitle {
       font-size: 20px;
       top: 33%;
-      left: 36%;
+      left: 42%;
    }
 
-   .about hr {
-      top: 65%;
+   .project hr {
+      top: 69%;
       left: 46%;
       width: 4em;
    }
