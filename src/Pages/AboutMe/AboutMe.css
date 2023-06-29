@@ -1,4 +1,8 @@
 /* About Header */
+html {
+   scroll-behavior: smooth;
+}
+
 .about {
    position: relative;
 }
