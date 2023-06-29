@@ -76,14 +76,13 @@
    align-items: center;
    border: 2px solid #292D32;
    border-radius: 6px;
-   padding: 10px;
    cursor: pointer;
    transition: 0.4s;
    box-shadow: 0.5px 0.5px 6px 1px #292D32;
 }
 
 .skill-card:hover {
-   box-shadow: 0.5px 0.5px 6px 1px #20c997;
+   box-shadow: 0.5px 0.5px 6px 1px #20C997;
 }
 
 .skill-card img{
