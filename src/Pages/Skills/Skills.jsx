@@ -51,18 +51,7 @@ const Skills = () => {
                   </div>
                </div>
 
-               <div className='skill-card'  data-aos="fade-left" data-aos-duration="1500">
-                  <div className='pl-3'>
-                     <img src={image3} alt="" className='w-40'/>
-                  </div>
-
-                  <div className='text-[#908F91] card-text p-3'>
-                     <h2 className='text-[20px] font-bold'>Express Js</h2>
-                     <p className='italic'>Express.js is a minimalistic and flexible web application framework for Node.js.</p>
-                  </div>
-               </div>
-
-               <div className='skill-card'  data-aos="zoom-in" data-aos-duration="1500">
+               <div className='skill-card' data-aos="zoom-in-left" data-aos-duration="1500">
                   <div className='pl-3'>
                      <img src={image4} alt="" className='w-48'/>
                   </div>
@@ -114,6 +103,17 @@ const Skills = () => {
                   <div className='text-[#908F91] card-text p-3'>
                      <h2 className='text-[20px] font-bold'>React</h2>
                      <p className='italic'>React.js is a powerful JavaScript library for building user interfaces with component-based architecture.</p>
+                  </div>
+               </div>
+
+               <div className='skill-card' data-aos="zoom-in" data-aos-duration="1500">
+                  <div className='pl-3'>
+                     <img src={image3} alt="" className='w-40' />
+                  </div>
+
+                  <div className='text-[#908F91] card-text p-3'>
+                     <h2 className='text-[20px] font-bold'>Express Js</h2>
+                     <p className='italic'>Express.js is a minimalistic and flexible web application framework for Node.js.</p>
                   </div>
                </div>
                

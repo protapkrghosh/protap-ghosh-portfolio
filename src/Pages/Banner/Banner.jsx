@@ -65,7 +65,7 @@ const Banner = () => {
             </div>
          </Container>
 
-         {/* <Particles
+         <Particles
             id="tsparticles"
             init={particlesInit}
             loaded={particlesLoaded}
@@ -150,7 +150,7 @@ const Banner = () => {
                },
                detectRetina: true,
             }}
-         /> */}
+         />
          
          <ScrollToTop smooth top="400" style={{ backgroundColor: "#20aa81", display: "flex", justifyContent: "center", alignItems: "center", borderRadius: "50%", padding: "10px" }}/>
       </div>
