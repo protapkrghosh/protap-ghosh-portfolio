@@ -1,0 +1,67 @@
+/* contact Header */
+.contact {
+   position: relative;
+}
+
+.contact-title {
+   color: #292D32;
+   font-size: 128px;
+   font-weight: bold;
+   text-transform: uppercase;
+}
+
+.contact-subTitle {
+   color: #ffffff;
+   font-size: 40px;
+   font-weight: bold;
+   position: absolute;
+   top: 35%;
+   left: 41%;
+}
+
+.contact hr {
+   width: 5em;
+   background: #20C997;
+   border-top: 0;
+   border-left: 0;
+   border-right: 0;
+   padding: 2px;
+   position: absolute;
+   top: 66%;
+   left: 47%;
+}
+
+@media only screen and (max-width: 768px) {
+   .contact-title {
+      font-size: 90px;
+   }
+
+   .contact-subTitle {
+      font-size: 30px;
+      top: 31%;
+      left: 38%;
+   }
+
+   .contact hr {
+      top: 65%;
+      left: 45%;
+   }
+}
+
+@media only screen and (max-width: 576px) {
+   .contact-title {
+      font-size: 60px;
+   }
+
+   .contact-subTitle {
+      font-size: 20px;
+      top: 35%;
+      left: 39%;
+   }
+
+   .contact hr {
+      width: 4em;
+      top: 68%;
+      left: 44%;
+   }
+}
