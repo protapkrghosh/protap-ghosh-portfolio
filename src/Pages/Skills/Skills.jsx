@@ -150,7 +150,7 @@ const Skills = () => {
                   </div>
                </div>
 
-               <div className='skill-card' data-aos="zoom-in-left" data-aos-duration="1500">
+               <div className='skill-card' data-aos="zoom-in" data-aos-duration="1500">
                   <div className='pl-3'>
                      <img src={image12} alt="" className='w-44'/>
                   </div>
