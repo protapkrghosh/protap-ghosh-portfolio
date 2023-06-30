@@ -42,6 +42,10 @@
    margin-right: 8%;
 }
 
+.email-address:hover {
+   text-decoration: underline #20C997;
+}
+
 .input-field {
    display: grid;
    grid-template-columns: 1fr 1fr;

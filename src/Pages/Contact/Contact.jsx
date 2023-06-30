@@ -35,12 +35,15 @@ const Contact = () => {
 
                      <div className="text-lg flex items-center mb-2">
                         <p className='mr-3 text-2xl text-[#20c997]'><AiOutlineMail /></p>
-                        <p className='text-[#D3E3E4]'>protapg518@gmail.com</p>
+                        <a href='https://mail.google.com' className='email-address text-[#D3E3E4]'>protapg518@gmail.com</a>
                      </div>
 
                      <div className="text-lg flex items-center mb-2">
                         <p className='mr-3 text-2xl text-[#20c997]'><BsFillTelephoneFill /></p>
-                        <p className='text-[#D3E3E4]'>+880 1790287567</p>
+                        <div>
+                           <p className='text-[#D3E3E4]'>+880 1790287567</p>
+                           <p className='text-[#D3E3E4]'>+880 1518944862</p>
+                        </div>
                      </div>
 
                      <div className="text-lg flex items-center ">
