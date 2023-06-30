@@ -164,7 +164,7 @@ const Banner = () => {
          </a>
 
          {/* Scroll Up */}
-         <ScrollToTop smooth top="400" style={{ backgroundColor: "#20aa81", display: "flex", justifyContent: "center", alignItems: "center", borderRadius: "50%", padding: "10px" }} />
+         <ScrollToTop smooth top="400" style={{ backgroundColor: "#20c99685", display: "flex", justifyContent: "center", alignItems: "center", borderRadius: "50%", padding: "10px" }} />
       </div>
    );
 };

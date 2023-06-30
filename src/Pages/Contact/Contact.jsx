@@ -1,27 +1,33 @@
-import { BsFillTelephoneFill, BsSend, BsFacebook, BsWhatsapp, BsLinkedin, BsGithub } from 'react-icons/bs'
+import { BsFillTelephoneFill, BsFacebook, BsWhatsapp, BsLinkedin, BsGithub } from 'react-icons/bs'
 import { AiOutlineMail } from 'react-icons/ai'
 import { MdLocationPin } from 'react-icons/md'
 import Container from "../../Components/Container";
 import './Contact.css'
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import toast, { Toaster } from 'react-hot-toast';
 
 const Contact = () => {
    const form = useRef();
 
    const sendEmail = (e) => {
       e.preventDefault();
-      emailjs.sendForm('service_b1hnbpd', 'template_g16mjxp', form.current, 'nj9k-mWuTTMyvDuKy')
+      emailjs.sendForm('service_k8qkxfs', 'template_t6cr9hq', form.current, 'nj9k-mWuTTMyvDuKy')
          .then((result) => {
-            console.log(result.text);
+            // console.log(result.text);
+            toast.success("Sending your message successful");
+            form.current.reset();
          }, (error) => {
-            console.log(error.text);
+            // console.log(error.text);
+            toast.error("Something wrong, please try again")
+            form.current.reset();
          });
    };
 
    return (
       <div className='bg-[#212529] pt-10 pb-16' id="contact">
          <Container>
+            <Toaster />
             <div className="text-center contact" data-aos="fade-up" data-aos-duration="1000">
                <h1 className="contact-title">Contact</h1>
                <h2 className="contact-subTitle">Get in Touch</h2>
@@ -34,12 +40,12 @@ const Contact = () => {
                      <p className="text-2xl text-[#D3E3E4] font-semibold uppercase mb-6">Address</p>
 
                      <div className="text-lg flex items-center mb-2">
-                        <p className='mr-3 text-2xl text-[#20c997]'><AiOutlineMail /></p>
+                        <p className='icon mr-3 text-2xl text-[#20c997]'><AiOutlineMail /></p>
                         <a href='https://mail.google.com' className='email-address text-[#D3E3E4]'>protapg518@gmail.com</a>
                      </div>
 
                      <div className="text-lg flex items-center mb-2">
-                        <p className='mr-3 text-2xl text-[#20c997]'><BsFillTelephoneFill /></p>
+                        <p className='icon mr-3 text-2xl text-[#20c997]'><BsFillTelephoneFill /></p>
                         <div>
                            <p className='text-[#D3E3E4]'>+880 1790287567</p>
                            <p className='text-[#D3E3E4]'>+880 1518944862</p>
@@ -47,7 +53,7 @@ const Contact = () => {
                      </div>
 
                      <div className="text-lg flex items-center ">
-                        <p className='mr-3 text-3xl text-[#20c997]'><MdLocationPin /></p>
+                        <p className='icon mr-3 text-2xl text-[#20c997]'><MdLocationPin /></p>
                         <p className='text-[#D3E3E4]'>Satkhira, Bangladesh</p>
                      </div>
                   </div>

@@ -20,7 +20,7 @@ const AboutMe = () => {
 
             <div className="md:flex items-center mt-10">
                <div className="md:w-1/2 mb-10" data-aos="zoom-in-up" data-aos-duration="1500">
-                  <img src={image} alt="Image" className="border border-[#20C997] w-[300px] h-auto rounded-xl mx-auto shadow-lg shadow-[#20C997]"/>
+                  <img src={image} alt="Image" className="border-2 border-[#20c99636] w-[300px] h-auto rounded-xl mx-auto shadow-lg shadow-[#20c996ab]"/>
                </div>
 
                <div className="md:w-1/2" data-aos="fade-up" data-aos-duration="1500">

@@ -57,6 +57,12 @@
    justify-content: center;
 }
 
+.icon {
+   padding: 10px;
+   background-color: #2d4e55;
+   border-radius: 50%;
+}
+
 .social-link {
    display: flex;
    margin-top: 30px;
@@ -65,12 +71,12 @@
 .social-link a {
    font-size: 27px;
    margin-right: 25px;
-   color: #a6a8aa;
+   color: #8a8a8a;
    transition: 0.5s;
 }
 
 .social-link a:hover {
-   color: #20c997;
+   color: #20c996bb;
 }
 
 /* Responsive */
@@ -129,4 +135,3 @@
       margin-top: 20px;
    }
 }
-
