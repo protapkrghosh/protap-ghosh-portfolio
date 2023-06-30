@@ -61,8 +61,8 @@ const Contact = () => {
                   <h3 className='text-2xl text-[#D3E3E4] font-semibold mt-10'>Keep in touch</h3>
                   <div className="social-link text-white">
                      <a href="https://www.facebook.com/Protap9Ghosh" className='tooltip tooltip-top' data-tip="Facebook"><BsFacebook /></a>
-                     <a href="" className='tooltip tooltip-top' data-tip="Whatsapp"><BsWhatsapp /></a>
-                     <a href="" className='tooltip tooltip-top' data-tip="Linkedin"><BsLinkedin /></a>
+                     <a href="https://whatsapp.com" className='tooltip tooltip-top' data-tip="Whatsapp"><BsWhatsapp /></a>
+                     <a href="https://www.linkedin.com" className='tooltip tooltip-top' data-tip="Linkedin"><BsLinkedin /></a>
                      <a href="https://www.github.com/Protap9Ghosh" className='tooltip tooltip-top' data-tip="GitHub"><BsGithub /></a>
                   </div>
                </div>
@@ -71,18 +71,22 @@ const Contact = () => {
                   <h2 className="text-2xl text-[#D3E3E4] font-semibold uppercase">Write me a message</h2>
 
                   <form ref={form} onSubmit={sendEmail}>
-                     <div className="input-field mt-8 mb-7">
+                     <div className="input-field mt-8">
                         <div className="form-control">
-                           <input type="text" name="user_name" placeholder="Name" className="input rounded-md text-[#a7adb3] bg-[#3A4046] focus:border-[#20c997]"  required/>
+                           <input type="text" name="user_name" placeholder="Michael David" className="input rounded-md text-[#a7adb3] bg-[#3A4046] focus:border-[#20c997]"  required/>
                         </div>
 
                         <div className="form-control">
-                           <input type="email" name="user_email" placeholder="Email" className="input rounded-md text-[#a7adb3] bg-[#3A4046] focus:border-[#20c997]"  required/>
+                           <input type="email" name="user_email" placeholder="example@gmail.com" className="input rounded-md text-[#a7adb3] bg-[#3A4046] focus:border-[#20c997]"  required/>
                         </div>
                      </div>
 
+                     <div className="form-control my-7">
+                        <input type="text" name="subject" placeholder="Subject" className="input rounded-md text-[#a7adb3] bg-[#3A4046] focus:border-[#20c997]" required />
+                     </div>
+
                      <div className="form-control">
-                        <textarea name="message" className="textarea rounded-md h-44 text-[17px] text-[#a7adb3] bg-[#3A4046] focus:border-[#20c997]" placeholder="Tell me more about your needs" required></textarea>
+                        <textarea name="message" className="textarea rounded-md h-40 text-[17px] text-[#a7adb3] bg-[#3A4046] focus:border-[#20c997]" placeholder="Write your message" required></textarea>
                      </div>
 
                      <div className="send-btn">
