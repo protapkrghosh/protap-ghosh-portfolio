@@ -3,12 +3,21 @@ import { AiOutlineMail } from 'react-icons/ai'
 import { MdLocationPin } from 'react-icons/md'
 import Container from "../../Components/Container";
 import './Contact.css'
-import { useForm } from "react-hook-form";
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
-   const { register, handleSubmit, watch, formState: { errors } } = useForm();
-   const onSubmit = data => console.log(data);
-   // console.log(watch("example"));
+   const form = useRef();
+
+   const sendEmail = (e) => {
+      e.preventDefault();
+      emailjs.sendForm('service_b1hnbpd', 'template_g16mjxp', form.current, 'nj9k-mWuTTMyvDuKy')
+         .then((result) => {
+            console.log(result.text);
+         }, (error) => {
+            console.log(error.text);
+         });
+   };
 
    return (
       <div className='bg-[#212529] pt-10 pb-16' id="contact">
@@ -51,23 +60,24 @@ const Contact = () => {
 
                <div className="message-field w-full" data-aos="zoom-in" data-aos-duration="1500">
                   <h2 className="text-2xl text-[#D3E3E4] font-semibold uppercase">Write me a message</h2>
-                  <form onSubmit={handleSubmit(onSubmit)}>
+
+                  <form ref={form} onSubmit={sendEmail}>
                      <div className="input-field mt-8 mb-7">
                         <div className="form-control">
-                           <input name='name' {...register("name", { required: true })} placeholder="Name" className="input rounded-md text-[#a7adb3] bg-[#3A4046] focus:border-[#20c997]" />
+                           <input type="text" name="user_name" placeholder="Name" className="input rounded-md text-[#a7adb3] bg-[#3A4046] focus:border-[#20c997]" />
                         </div>
 
                         <div className="form-control">
-                           <input name='email' {...register("email", { required: true })} placeholder="Email" className="input rounded-md text-[#a7adb3] bg-[#3A4046] focus:border-[#20c997]" />
+                           <input type="email" name="user_email" placeholder="Email" className="input rounded-md text-[#a7adb3] bg-[#3A4046] focus:border-[#20c997]" />
                         </div>
                      </div>
 
                      <div className="form-control">
-                        <textarea name='message' {...register("message", { required: true })} className="textarea rounded-md h-44 text-[17px] text-[#a7adb3] bg-[#3A4046] focus:border-[#20c997]" placeholder="Tell me more about your needs"></textarea>
+                        <textarea name="message" className="textarea rounded-md h-44 text-[17px] text-[#a7adb3] bg-[#3A4046] focus:border-[#20c997]" placeholder="Tell me more about your needs"></textarea>
                      </div>
 
                      <div className="send-btn">
-                        <button className='btn border-none text-[16px] text-white capitalize border-2 rounded-full px-8 mt-8 ms-5 bg-[#20C997] hover:bg-[#1BAA80]'>Send Message <BsSend className='text-xl' /></button>
+                        <input type="submit" value="Send Message" className='btn border-none text-[16px] text-white capitalize border-2 rounded-full px-8 mt-8 ms-5 bg-[#20C997] hover:bg-[#1BAA80]' />
                      </div>
                   </form>
                </div>
