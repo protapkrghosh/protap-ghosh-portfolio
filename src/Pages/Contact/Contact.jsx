@@ -64,16 +64,16 @@ const Contact = () => {
                   <form ref={form} onSubmit={sendEmail}>
                      <div className="input-field mt-8 mb-7">
                         <div className="form-control">
-                           <input type="text" name="user_name" placeholder="Name" className="input rounded-md text-[#a7adb3] bg-[#3A4046] focus:border-[#20c997]" />
+                           <input type="text" name="user_name" placeholder="Name" className="input rounded-md text-[#a7adb3] bg-[#3A4046] focus:border-[#20c997]"  required/>
                         </div>
 
                         <div className="form-control">
-                           <input type="email" name="user_email" placeholder="Email" className="input rounded-md text-[#a7adb3] bg-[#3A4046] focus:border-[#20c997]" />
+                           <input type="email" name="user_email" placeholder="Email" className="input rounded-md text-[#a7adb3] bg-[#3A4046] focus:border-[#20c997]"  required/>
                         </div>
                      </div>
 
                      <div className="form-control">
-                        <textarea name="message" className="textarea rounded-md h-44 text-[17px] text-[#a7adb3] bg-[#3A4046] focus:border-[#20c997]" placeholder="Tell me more about your needs"></textarea>
+                        <textarea name="message" className="textarea rounded-md h-44 text-[17px] text-[#a7adb3] bg-[#3A4046] focus:border-[#20c997]" placeholder="Tell me more about your needs" required></textarea>
                      </div>
 
                      <div className="send-btn">
