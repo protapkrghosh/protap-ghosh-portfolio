@@ -29,7 +29,7 @@ const NavBar = () => {
                </ul>
             </div>
 
-            <Link className="normal-case text-3xl font-bold">Protap Ghosh</Link>
+            <Link className="normal-case font-[Poppins] text-4xl font-bold">Protap Ghosh</Link>
          </div>
 
          <div className="navbar-end hidden lg:flex">
