@@ -3,12 +3,17 @@ import { AiOutlineMail } from 'react-icons/ai'
 import { MdLocationPin } from 'react-icons/md'
 import Container from "../../Components/Container";
 import './Contact.css'
+import { useForm } from "react-hook-form";
 
 const Contact = () => {
+   const { register, handleSubmit, watch, formState: { errors } } = useForm();
+   const onSubmit = data => console.log(data);
+   // console.log(watch("example"));
+
    return (
       <div className='bg-[#212529] pt-10 pb-16'>
          <Container>
-            <div className="text-center contact" data-aos="fade-up" data-aos-duration="1000">
+            <div className="text-center contact" id="contact" data-aos="fade-up" data-aos-duration="1000">
                <h1 className="contact-title">Contact</h1>
                <h2 className="contact-subTitle">Get in Touch</h2>
                <hr />
@@ -44,30 +49,21 @@ const Contact = () => {
                   </div>
                </div>
 
-               <div className="message-field" data-aos="zoom-in" data-aos-duration="1500">
+               <div className="message-field w-full" data-aos="zoom-in" data-aos-duration="1500">
                   <h2 className="text-2xl text-[#D3E3E4] font-semibold uppercase">Write me a message</h2>
-                  <form>
-                     <div className="form-field">
+                  <form onSubmit={handleSubmit(onSubmit)}>
+                     <div className="input-field mt-8 mb-7">
                         <div className="form-control">
-                           <label className="label">
-                              <span className="label-text">Name</span>
-                           </label>
-                           <input type="text" placeholder="Name" className="input rounded-md text-[#a7adb3] bg-[#3A4046] focus:border-[#20c997]" />
+                           <input name='name' {...register("name", { required: true })} placeholder="Name" className="input rounded-md text-[#a7adb3] bg-[#3A4046] focus:border-[#20c997]" />
                         </div>
 
                         <div className="form-control">
-                           <label className="label">
-                              <span className="label-text">Email</span>
-                           </label>
-                           <input type="email" placeholder="Email" className="input rounded-md text-[#a7adb3] bg-[#3A4046] focus:border-[#20c997]" />
+                           <input name='email' {...register("email", { required: true })} placeholder="Email" className="input rounded-md text-[#a7adb3] bg-[#3A4046] focus:border-[#20c997]" />
                         </div>
                      </div>
 
                      <div className="form-control">
-                        <label className="label">
-                           <span className="label-text">Your bio</span>
-                        </label>
-                        <textarea className="textarea rounded-md h-44 text-[17px] text-[#a7adb3] bg-[#3A4046] focus:border-[#20c997]" placeholder="Tell me more about your needs"></textarea>
+                        <textarea name='message' {...register("message", { required: true })} className="textarea rounded-md h-44 text-[17px] text-[#a7adb3] bg-[#3A4046] focus:border-[#20c997]" placeholder="Tell me more about your needs"></textarea>
                      </div>
 
                      <div className="send-btn">

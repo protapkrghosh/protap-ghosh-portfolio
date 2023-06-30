@@ -30,7 +30,7 @@ const Banner = () => {
    }
 
    return (
-      <div className='bg-[#212529] text-[#798792] min-h-screen'>
+      <div className='bg-[#212529] text-[#798792] min-h-screen' id="home">
          <Headroom>
             <NavBar></NavBar>
          </Headroom>
@@ -50,7 +50,7 @@ const Banner = () => {
                      As a self-taught programmer, I have honed my skills in the MERN stack, demonstrating proficiency in JavaScript, HTML, and CSS. I possess a strong understanding of these technologies and strive to stay updated with the latest industry trends and advancements. My commitment to continuous learning allows me to adapt to evolving programming practices.
                   </p>
 
-                  <button className='btn btn-outline border-[#20C997] hover:border-[#20C997] text-[16px] text-[#20C997] capitalize border-2 rounded-full px-8 mt-8 hover:bg-[#20C997]'>Hire Me</button>
+                  <a href="#contact" className='btn btn-outline border-[#20C997] hover:border-[#20C997] text-[16px] text-[#20C997] capitalize border-2 rounded-full px-8 mt-8 hover:bg-[#20C997]'>Hire Me</a>
 
                   <button onClick={handleDownload} className='btn border-none text-[16px] text-white capitalize border-2 rounded-full px-8 mt-8 ms-5 bg-[#20C997] hover:bg-[#1BAA80]'>Resume <FaDownload /></button>
                </div>
@@ -63,7 +63,7 @@ const Banner = () => {
                            <h2 className='relative text-3xl font-bold uppercase'>Protap Ghosh <br />
                               <span className='text-base font-semibold'>MERN Stack Developer</span>
                            </h2>
-                           <button className='btn btn-outline border-[#6C757D] hover:border-[#6C757D] text-[16px] text-[#6C757D] capitalize border-2 rounded-full px-8 mt-5 hover:bg-[#6C757D]'>Hire Me</button>
+                           <a href="#contact" className='btn btn-outline border-[#6C757D] hover:border-[#6C757D] text-[16px] text-[#6C757D] capitalize border-2 rounded-full px-8 mt-5 hover:bg-[#6C757D]'>Hire Me</a>
                         </div>
                      </div>
                   </div>

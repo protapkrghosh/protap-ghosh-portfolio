@@ -19,7 +19,7 @@ import image15 from "../../assets/tech-skill/vscode.png"
 
 const Skills = () => {
    return (
-      <div className='bg-[#212529] pt-10 pb-16'>
+      <div className='bg-[#212529] pt-10 pb-16' id='skills'>
          <Container>
             <div className="text-center tech-skill" data-aos="fade-up" data-aos-duration="1000">
                <h1 className="summary">Summary</h1>

@@ -3,7 +3,7 @@ import './Project.css'
 
 const Project = () => {
    return (
-      <div className="bg-[#343A40] pt-10 pb-16">
+      <div className="bg-[#343A40] pt-10 pb-16" id="project">
          <Container>
             <div className="text-center project" data-aos="fade-up" data-aos-duration="1000">
                <h1 className="project-title">Portfolio</h1>

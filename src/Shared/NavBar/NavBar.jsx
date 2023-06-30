@@ -3,11 +3,17 @@ import './NavBar.css'
 
 const NavBar = () => {
    const navItems = <>
-      <Link to='banner' className='menu-link active' spy={true} smooth={true} offset={-90} duration={500}>Home</Link>
+      <a className='menu-link' href="#home">Home</a>
+      <a className='menu-link' href="#skills">skills</a>
+      <a className='menu-link' href="#project">project</a>
+      <a className='menu-link' href="#about-me">About</a>
+      <a className='menu-link' href="#contact">Contact</a>
+
+      {/* <Link to='banner' className='menu-link active' spy={true} smooth={true} offset={-90} duration={500}>Home</Link>
       <Link to='skill' className='menu-link' spy={true} smooth={true} offset={-141} duration={500}>Skills</Link>
       <Link to='project' className='menu-link' spy={true} smooth={true} offset={-90} duration={500}>Project</Link>
-      <Link to='about' className='menu-link' spy={true} smooth={true} offset={-70} duration={500}>About</Link>
-      <Link to='contact' className='menu-link' spy={true} smooth={true} offset={-90} duration={500}>Contact Me</Link>
+      <Link to='about' className='menu-link' spy={true} smooth={true} offset={-40} duration={500}>About</Link>
+      <Link to='contact' className='menu-link' spy={true} smooth={true} offset={-90} duration={500}>Contact Me</Link> */}
    </>
 
    return (
