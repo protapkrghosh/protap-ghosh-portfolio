@@ -62,7 +62,7 @@ const Skills = () => {
                   </div>
                </div>
 
-               <div className='skill-card' data-aos="zoom-out" data-aos-duration="1500">
+               <div className='skill-card' data-aos="fade-up" data-aos-duration="1500">
                   <div className='pl-3'>
                      <img src={image5} alt="" className='w-48'/>
                   </div>
@@ -128,7 +128,7 @@ const Skills = () => {
                   </div>
                </div>
 
-               <div className='skill-card' data-aos="zoom-out-up" data-aos-duration="1500">
+               <div className='skill-card' data-aos="fade-down" data-aos-duration="1500">
                   <div className='pl-3'>
                      <img src={image10} alt="" className='w-48'/>
                   </div>
