@@ -19,7 +19,7 @@ const Project = () => {
 
             <div className="project-card  pt-5">
                {/* Clever Cookie */}
-               <div className="card bg-[#444b52] shadow-md rounded-md mx-auto">
+               <div className="card bg-[#444b52] shadow-md rounded-md mx-auto" data-aos="zoom-in" data-aos-duration="1500">
                   <figure className="clever clever-cookie h-96"></figure>
                   <div className="card-body">
                      <h2 className="card-title text-2xl text-white font-[Poppins]">Clever Cookie</h2>
@@ -38,7 +38,7 @@ const Project = () => {
                </div>
 
                {/* Magical Toy */}
-               <div className="card bg-[#444b52] shadow-md rounded-md mx-auto">
+               <div className="card bg-[#444b52] shadow-md rounded-md mx-auto" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
                   <figure className="magical magical-toy h-96"></figure>
                   <div className="card-body">
                      <h2 className="card-title text-2xl text-white font-[Poppins]">Magical Toy</h2>
@@ -58,7 +58,7 @@ const Project = () => {
                </div>
 
                {/* Skill Up Camp */}
-               <div className="card bg-[#444b52] shadow-md rounded-md mx-auto">
+               <div className="card bg-[#444b52] shadow-md rounded-md mx-auto" data-aos="zoom-in-up" data-aos-duration="1500">
                   <figure className="skill-up skill-up-camp h-96"></figure>
                   <div className="card-body">
                      <h2 className="card-title text-2xl text-white font-[Poppins]">Skill Up Camp</h2>
