@@ -1,7 +1,7 @@
 import { useCallback } from "react";
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import Container from '../../Components/Container';
-import image from "../../assets/protap-ghosh.png"
+import image from "../../assets/image/protap-ghosh.png"
 import './Banner.css'
 import { FaDownload } from 'react-icons/fa';
 import Particles from "react-tsparticles";

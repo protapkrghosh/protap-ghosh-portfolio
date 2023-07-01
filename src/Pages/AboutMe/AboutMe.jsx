@@ -1,6 +1,6 @@
 import { FaDownload } from "react-icons/fa";
 import Container from "../../Components/Container";
-import image from "../../assets/protap.png"
+import image from "../../assets/image/protap.png"
 import CountUp from "react-countup";
 import './AboutMe.css'
 
