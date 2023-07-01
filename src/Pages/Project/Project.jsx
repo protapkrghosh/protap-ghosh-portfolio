@@ -31,7 +31,7 @@ const Project = () => {
                         </div>
 
                         {/* Open the modal using ID.showModal() method */}
-                        <button onClick={() => window.my_modal_5.showModal()} className='btn btn-sm btn-outline border-[#9199a0] hover:border-[#9199a0] text-[16px] text-[#9199a0] capitalize border-2 rounded-full px-5 hover:bg-[#6C757D]'><BsFillEyeFill/> Details</button>
+                        <button onClick={() => window.open_modal.showModal()} className='btn btn-sm btn-outline border-[#9199a0] hover:border-[#9199a0] text-[16px] text-[#9199a0] capitalize border-2 rounded-full px-5 hover:bg-[#6C757D]'><BsFillEyeFill/> Details</button>
                         <Modal/>
 
                      </div>

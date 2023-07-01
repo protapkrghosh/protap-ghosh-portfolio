@@ -2,18 +2,18 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Autoplay, Pagination } from "swiper";
-import image1 from "../../../../assets/Clever-cookie/image1.png"
-import image2 from "../../../../assets/Clever-cookie/image2.png"
-import image3 from "../../../../assets/Clever-cookie/image3.png"
-import image4 from "../../../../assets/Clever-cookie/image4.png"
-import image5 from "../../../../assets/Clever-cookie/image5.png"
-import image6 from "../../../../assets/Clever-cookie/image6.png"
+import image1 from "../../../../assets/clever-cookie/image1.png"
+import image2 from "../../../../assets/clever-cookie/image2.png"
+import image3 from "../../../../assets/clever-cookie/image3.png"
+import image4 from "../../../../assets/clever-cookie/image4.png"
+import image5 from "../../../../assets/clever-cookie/image5.png"
+import image6 from "../../../../assets/clever-cookie/image6.png"
 import { HiOutlineLink } from "react-icons/hi";
 import { FaGithub, FaServer } from "react-icons/fa";
 
 const CleverCookieModal = () => {
    return (
-      <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
+      <dialog id="open_modal" className="modal modal-bottom sm:modal-middle">
          <form method="dialog" className="modal-box bg-[#414a52] p-5">
             <div>
                <Swiper
