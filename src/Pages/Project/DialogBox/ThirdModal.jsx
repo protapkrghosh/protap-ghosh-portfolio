@@ -2,18 +2,19 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Autoplay, Pagination } from "swiper";
-import image1 from "../../../../assets/clever-cookie/image1.png"
-import image2 from "../../../../assets/clever-cookie/image2.png"
-import image3 from "../../../../assets/clever-cookie/image3.png"
-import image4 from "../../../../assets/clever-cookie/image4.png"
-import image5 from "../../../../assets/clever-cookie/image5.png"
-import image6 from "../../../../assets/clever-cookie/image6.png"
+import image1 from "../../../assets/skill-up/image1.png"
+import image2 from "../../../assets/skill-up/image2.png"
+import image3 from "../../../assets/skill-up/image3.png"
+import image4 from "../../../assets/skill-up/image4.png"
+import image5 from "../../../assets/skill-up/image5.png"
+import image6 from "../../../assets/skill-up/image6.png"
+import image7 from "../../../assets/skill-up/image7.png"
 import { HiOutlineLink } from "react-icons/hi";
 import { FaGithub, FaServer } from "react-icons/fa";
 
-const CleverCookieModal = () => {
+const ThirdModal = () => {
    return (
-      <dialog id="open_modal" className="modal modal-bottom sm:modal-middle">
+      <dialog id="third_modal" className="modal modal-bottom sm:modal-middle">
          <form method="dialog" className="modal-box bg-[#414a52] p-5">
             <div>
                <Swiper
@@ -36,26 +37,27 @@ const CleverCookieModal = () => {
                   <SwiperSlide><img src={image4} alt="" className="h-72 rounded-md"/></SwiperSlide>
                   <SwiperSlide><img src={image5} alt="" className="h-72 rounded-md"/></SwiperSlide>
                   <SwiperSlide><img src={image6} alt="" className="h-72 rounded-md"/></SwiperSlide>
+                  <SwiperSlide><img src={image7} alt="" className="h-72 rounded-md"/></SwiperSlide>
                </Swiper>
             </div>
 
             <div className="text-[#c1d0db]">
-               <h3 className="font-bold text-3xl text-white mt-5 font-[Poppins]">Clever Cookie</h3>
-               <h3 className="font-bold text-xl mt-4 ml-6">key Features</h3>
+               <h3 className="font-bold text-3xl text-white mt-5 font-[Poppins]">Skill Up Camp</h3>
+               <h3 className="font-bold text-xl italic mt-4 ml-6">key Features</h3>
                <div className="mt-3 ml-6 space-y-1">
-                  <li>It is a cooking and food-related website.</li>
-                  <li>This site uses a login system.</li>
-                  <li>Favorite food can not be added without login.</li>
-                  <li>If you like the food of any recipe, you can tell about that recipe by clicking the view recipe button.</li>
-                  <li>If the user is logged in, he can view the safe and recipe details.</li>
-                  <li>If the user is logged in, his name can be seen in the navbar with his picture and tooltip.</li>
+                  <li>It is an educational website, from here various courses can be taken.</li>
+                  <li>Login is required for any class details and payment.</li>
+                  <li>If an instructor wants to take classes, he must open an account.</li>
+                  <li>An admin can revoke the permission of a class in instructor.</li>
+                  <li>If a class has no vacant seats then that class cannot be purchased anymore, the button will be disabled.</li>
+                  <li>Before enrolling in a class you must log in and pay. otherwise, the student will not be able to attend the class.</li>
                </div>
                
                <h3 className="text-xl mt-5 my-2">Source Code</h3>
                <div className="flex items-center space-x-5 source-code text-2xl text-[#a1a8af]">
-                  <a href="https://github.com/protap9ghosh/clever-cookie-client" className="hover:text-[#20c997] tooltip tooltip-bottom" data-tip="Client Side"><FaGithub /></a>
-                  <a href="https://github.com/protap9ghosh/clever-cookie-server" className="hover:text-[#20c997] tooltip tooltip-bottom" data-tip="Server Side"><FaServer /></a>
-                  <a href="https://clever-cookie-c7dd6.web.app" className="hover:text-[#20c997] tooltip tooltip-bottom" data-tip="Live Site"><HiOutlineLink /></a>
+                  <a href="https://github.com/protap9ghosh/skill-up-camp-client" className="hover:text-[#20c997] tooltip tooltip-bottom" data-tip="Client Side" target="_blank" rel="noreferrer"><FaGithub /></a>
+                  <a href="https://github.com/protap9ghosh/skill-up-camp-server" className="hover:text-[#20c997] tooltip tooltip-bottom" data-tip="Server Side" target="_blank" rel="noreferrer"><FaServer /></a>
+                  <a href="https://skill-up-camp.web.app" className="hover:text-[#20c997] tooltip tooltip-bottom" data-tip="Live Site" target="_blank" rel="noreferrer"><HiOutlineLink /></a>
                </div>
             </div>
 
@@ -68,4 +70,4 @@ const CleverCookieModal = () => {
    );
 };
 
-export default CleverCookieModal;
+export default ThirdModal;
