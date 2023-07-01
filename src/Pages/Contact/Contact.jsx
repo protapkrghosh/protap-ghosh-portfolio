@@ -1,4 +1,4 @@
-import { BsFillTelephoneFill, BsFacebook, BsWhatsapp, BsLinkedin, BsGithub } from 'react-icons/bs'
+import { BsFillTelephoneFill, BsFacebook, BsWhatsapp, BsLinkedin, BsGithub, BsTwitter } from 'react-icons/bs'
 import { AiOutlineMail } from 'react-icons/ai'
 import { MdLocationPin } from 'react-icons/md'
 import Container from "../../Components/Container";
@@ -61,6 +61,7 @@ const Contact = () => {
                   <h3 className='text-2xl text-[#D3E3E4] font-semibold mt-10'>Keep in touch</h3>
                   <div className="social-link text-white">
                      <a href="https://www.facebook.com/Protap9Ghosh" className='tooltip tooltip-top' data-tip="Facebook" target="_blank" rel="noreferrer"><BsFacebook /></a>
+                     <a href="https://www.twitter.com/Protap9Ghosh" className='tooltip tooltip-top' data-tip="Twitter" target="_blank" rel="noreferrer"><BsTwitter /></a>
                      <a href="https://whatsapp.com/Protap9Ghosh" className='tooltip tooltip-top' data-tip="Whatsapp" target="_blank" rel="noreferrer"><BsWhatsapp /></a>
                      <a href="https://www.linkedin.com" className='tooltip tooltip-top' data-tip="Linkedin" target="_blank" rel="noreferrer"><BsLinkedin /></a>
                      <a href="https://www.github.com/Protap9Ghosh" className='tooltip tooltip-top' data-tip="GitHub" target="_blank" rel="noreferrer"><BsGithub /></a>
