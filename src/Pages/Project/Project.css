@@ -31,6 +31,58 @@
    left: 47%;
 }
 
+/* Project Card */
+.project-card {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: 30px;
+}
+
+/* Clever Cookie */
+.clever {
+   background-color: #262a2e;
+   transition: ease-in-out 5s;
+}
+
+.clever.clever-cookie {
+   background: url(../../assets/clever-cookie/clever-cookie.png);
+   background-size: cover;
+}
+
+.clever:hover {
+   background-position: bottom;
+}
+
+/* Magical Toy */
+.magical {
+   background-color: #262a2e;
+   transition: ease-in-out 5s;
+}
+
+.magical.magical-toy {
+   background: url(../../assets/magical-toy/magical-toy.png);
+   background-size: cover;
+}
+
+.magical:hover {
+   background-position: bottom;
+}
+
+/* Skill Up Camp */
+.skill-up {
+   background-color: #262a2e;
+   transition: ease-in-out 5s;
+}
+
+.skill-up.skill-up-camp {
+   background: url(../../assets/skill-up/skill-up-camp.png);
+   background-size: cover;
+}
+
+.skill-up:hover {
+   background-position: bottom;
+}
+
 /* Responsive */
 @media only screen and (max-width: 768px) {
    .project-title {
@@ -46,6 +98,12 @@
    .project hr {
       top: 68%;
       left: 45%;
+   }
+
+   .project-card {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
    }
 }
 
@@ -65,19 +123,10 @@
       left: 46%;
       width: 4em;
    }
-}
 
-/* Project Card */
-.image {
-   background-color: #262a2e;
-   transition: ease-in-out 5s;
-}
-
-.image.image1 {
-   background: url(../../assets/clever-cookie/clever-cookie.png);
-   background-size: cover;
-}
-
-.image:hover {
-   background-position: bottom;
+   .project-card {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 30px;
+   }
 }
