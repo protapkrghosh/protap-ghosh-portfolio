@@ -3,7 +3,7 @@ import Container from "../../Components/Container"
 import './Project.css'
 import { FaGithub, FaServer } from "react-icons/fa";
 import { HiOutlineLink } from "react-icons/hi";
-import CleverCookieModal from "./DialogBox/CleverCookie/CleverCookieModal";
+import CleverCookieModal from "./DialogBox/CleverCookieModal";
 
 const Project = () => {
    return (
