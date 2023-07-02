@@ -51,7 +51,7 @@ const Skills = () => {
                   </div>
                </div>
 
-               <div className='skill-card p-3' data-aos="zoom-in-left" data-aos-duration="1500">
+               <div className='skill-card p-3' data-aos="zoom-in" data-aos-duration="1500">
                   <div className='pr-3'>
                      <img src={image4} alt="" className='w-48'/>
                   </div>

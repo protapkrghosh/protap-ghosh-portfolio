@@ -35,16 +35,16 @@ const Contact = () => {
             </div>
 
             <div className="pt-5 contact-form">
-               <div className='address' data-aos="fade-right" data-aos-duration="1500">
+               <div className='address'>
                   <div>
                      <p className="text-2xl text-[#D3E3E4] font-semibold uppercase mb-6">Address</p>
 
-                     <div className="text-lg flex items-center mb-2">
+                     <div className="text-lg flex items-center mb-2" data-aos="fade-up" data-aos-duration="900">
                         <p className='icon mr-3 text-2xl text-[#20c997]'><AiOutlineMail /></p>
-                        <a href='https://mail.google.com' className='email-address text-[#D3E3E4]'>protapg518@gmail.com</a>
+                        <a href='https://mail.google.com' target='_blank' rel='noreferrer' className='email-address text-[#D3E3E4]'>protapg518@gmail.com</a>
                      </div>
 
-                     <div className="text-lg flex items-center mb-2">
+                     <div className="text-lg flex items-center mb-2" data-aos="fade-up" data-aos-duration="1300">
                         <p className='icon mr-3 text-2xl text-[#20c997]'><BsFillTelephoneFill /></p>
                         <div>
                            <p className='text-[#D3E3E4]'>+880 1790287567</p>
@@ -52,7 +52,7 @@ const Contact = () => {
                         </div>
                      </div>
 
-                     <div className="text-lg flex items-center ">
+                     <div className="text-lg flex items-center" data-aos="fade-up" data-aos-duration="1500">
                         <p className='icon mr-3 text-2xl text-[#20c997]'><MdLocationPin /></p>
                         <p className='text-[#D3E3E4]'>Satkhira, Bangladesh</p>
                      </div>
@@ -61,18 +61,22 @@ const Contact = () => {
                   <h3 className='text-2xl text-[#D3E3E4] font-semibold mt-10'>Keep in touch</h3>
                   <div className="social-link text-white">
                      <a href="https://www.facebook.com/Protap9Ghosh" className='tooltip tooltip-top' data-tip="Facebook" target="_blank" rel="noreferrer"><BsFacebook /></a>
+
                      <a href="https://www.twitter.com/Protap9Ghosh" className='tooltip tooltip-top' data-tip="Twitter" target="_blank" rel="noreferrer"><BsTwitter /></a>
+
                      <a href="https://whatsapp.com/Protap9Ghosh" className='tooltip tooltip-top' data-tip="Whatsapp" target="_blank" rel="noreferrer"><BsWhatsapp /></a>
+
                      <a href="https://www.linkedin.com" className='tooltip tooltip-top' data-tip="Linkedin" target="_blank" rel="noreferrer"><BsLinkedin /></a>
+
                      <a href="https://www.github.com/Protap9Ghosh" className='tooltip tooltip-top' data-tip="GitHub" target="_blank" rel="noreferrer"><BsGithub /></a>
                   </div>
                </div>
 
-               <div className="message-field w-full" data-aos="zoom-in" data-aos-duration="1500">
+               <div className="message-field w-full">
                   <h2 className="text-2xl text-[#D3E3E4] font-semibold uppercase">Write me a message</h2>
 
                   <form ref={form} onSubmit={sendEmail}>
-                     <div className="input-field mt-8">
+                     <div className="input-field mt-8" data-aos="fade-up" data-aos-duration="800">
                         <div className="form-control">
                            <input type="text" name="user_name" placeholder="Michael David" className="input rounded-md text-[#a7adb3] bg-[#3A4046] focus:border-[#20c997]"  required/>
                         </div>
@@ -82,15 +86,15 @@ const Contact = () => {
                         </div>
                      </div>
 
-                     <div className="form-control my-7">
+                     <div className="form-control my-7" data-aos="fade-up" data-aos-duration="1000">
                         <input type="text" name="subject" placeholder="Subject" className="input rounded-md text-[#a7adb3] bg-[#3A4046] focus:border-[#20c997]" required />
                      </div>
 
-                     <div className="form-control">
+                     <div className="form-control" data-aos="fade-up" data-aos-duration="1300">
                         <textarea name="message" className="textarea rounded-md h-40 text-[17px] text-[#a7adb3] bg-[#3A4046] focus:border-[#20c997]" placeholder="Write your message" required></textarea>
                      </div>
 
-                     <div className="send-btn">
+                     <div className="send-btn" data-aos="fade-up" data-aos-duration="1300">
                         <input type="submit" value="Send Message" className='btn border-none text-[16px] text-white capitalize border-2 rounded-full px-8 mt-8 ms-5 bg-[#20C997] hover:bg-[#1BAA80]' />
                      </div>
                   </form>
