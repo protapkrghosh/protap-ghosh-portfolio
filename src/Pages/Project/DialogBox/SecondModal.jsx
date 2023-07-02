@@ -67,6 +67,8 @@ const SecondModal = () => {
                      <span>Node Js</span>
                      <span>Vercel</span>
                      <span>MongoDB</span>
+                     <span>toastify</span>
+                     <span>react-helmet-async</span>
                   </div>
                </div>
 

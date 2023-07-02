@@ -63,6 +63,7 @@ const ThirdModal = () => {
                      <span>Firebase</span>
                      <span>Tailwind CSS</span>
                      <span>Daisy UI</span>
+                     <span>react-helmet-async</span>
                      <span>MongoDB</span>
                      <span>Express Js</span>
                      <span>Node Js</span>
@@ -72,6 +73,9 @@ const ThirdModal = () => {
                      <span>AOS Animation</span>
                      <span>Sweetalert2</span>
                      <span>React query</span>
+                     <span>swiper</span>
+                     <span>react-hook-form</span>
+                     <span>toastify</span>
                   </div>
                </div>
                
