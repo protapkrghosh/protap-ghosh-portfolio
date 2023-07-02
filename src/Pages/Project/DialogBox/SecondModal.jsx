@@ -43,14 +43,31 @@ const SecondModal = () => {
 
             <div className="text-[#c1d0db]">
                <h3 className="font-bold text-3xl text-white mt-5 font-[Poppins]">Magical Toy</h3>
-               <h3 className="font-bold text-xl italic mt-4 ml-6">key Features</h3>
-               <div className="mt-3 ml-6 space-y-1">
+               <h3 className="text-xl font-semibold italic mt-4 ml-6">key Features</h3>
+               <div className="mt-2 ml-6 space-y-1">
                   <li>Extensive Educational Toy Collection: Users can browse and explore a wide range of educational toys.</li>
                   <li>User Authentication: Users can register and log in to access additional features.</li>
                   <li>CRUD Operations: After logging in, users can add, remove, and update their toys using the Create, Read, Update, and Delete (CRUD) operations.</li>
                   <li>Toy Details: Users can view detailed information about each toy, including descriptions, images, and specifications.</li>
                   <li>Search Functionality: Users can search for specific toys based on keywords or categories.</li>
                   <li>Price Sorting: Users can sort the toys by price to find the ones that fit their budget.</li>
+               </div>
+
+               <div>
+                  <h3 className="text-xl mt-5 my-2 font-semibold">Technologies</h3>
+                  <div className="text-[17px] space-x-5 font-[Poppins]">
+                     <span>React Js</span>
+                     <span>React router</span>
+                     <span>Tailwind CSS</span>
+                     <span>AOS Animation</span>
+                     <span>Daisy UI</span>
+                     <span>Firebase</span>
+                     <span>Sweetalert2</span>
+                     <span>Express Js</span>
+                     <span>Node Js</span>
+                     <span>Vercel</span>
+                     <span>MongoDB</span>
+                  </div>
                </div>
 
                <h3 className="text-xl mt-5 my-2">Source Code</h3>

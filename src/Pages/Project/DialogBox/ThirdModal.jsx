@@ -43,14 +43,36 @@ const ThirdModal = () => {
 
             <div className="text-[#c1d0db]">
                <h3 className="font-bold text-3xl text-white mt-5 font-[Poppins]">Skill Up Camp</h3>
-               <h3 className="font-bold text-xl italic mt-4 ml-6">key Features</h3>
-               <div className="mt-3 ml-6 space-y-1">
+               <h3 className="text-xl font-semibold italic mt-4 ml-6">key Features</h3>
+               <div className="mt-2 ml-6 space-y-1">
                   <li>It is an educational website, from here various courses can be taken.</li>
                   <li>Login is required for any class details and payment.</li>
                   <li>If an instructor wants to take classes, he must open an account.</li>
                   <li>An admin can revoke the permission of a class in instructor.</li>
                   <li>If a class has no vacant seats then that class cannot be purchased anymore, the button will be disabled.</li>
                   <li>Before enrolling in a class you must log in and pay. otherwise, the student will not be able to attend the class.</li>
+               </div>
+
+               <div>
+                  <h3 className="text-xl mt-5 my-2 font-semibold">Technologies</h3>
+                  <div className="text-[17px] space-x-5 font-[Poppins]">
+                     <span>HTML5</span>
+                     <span>CSS3</span>
+                     <span>Vercel</span>
+                     <span>React Js</span>
+                     <span>Firebase</span>
+                     <span>Tailwind CSS</span>
+                     <span>Daisy UI</span>
+                     <span>MongoDB</span>
+                     <span>Express Js</span>
+                     <span>Node Js</span>
+                     <span>React router</span>
+                     <span>JWT</span>
+                     <span>Axios</span>
+                     <span>AOS Animation</span>
+                     <span>Sweetalert2</span>
+                     <span>React query</span>
+                  </div>
                </div>
                
                <h3 className="text-xl mt-5 my-2">Source Code</h3>
