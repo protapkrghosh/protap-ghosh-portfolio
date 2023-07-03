@@ -21,6 +21,7 @@ const Project = () => {
                {/* Clever Cookie */}
                <div className="card bg-[#444b52] shadow-md rounded-md mx-auto" data-aos="zoom-in" data-aos-duration="1500">
                   <figure className="clever clever-cookie h-96"></figure>
+                  
                   <div className="card-body">
                      <h2 className="card-title text-2xl text-white font-[Poppins]">Clever Cookie</h2>
                      <p className="text-[#acbac5]">The website highlights top Bangladeshi chefs, providing their names, experiences, likes, and further details. All Chef and their short details are on a card and the All Recipe Page is a protected Page.</p>
