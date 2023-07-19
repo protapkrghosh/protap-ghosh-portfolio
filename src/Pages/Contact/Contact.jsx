@@ -60,15 +60,15 @@ const Contact = () => {
 
                   <h3 className='text-2xl text-[#D3E3E4] font-semibold mt-10'>Keep in touch</h3>
                   <div className="social-link text-white">
-                     <a href="https://www.facebook.com/Protap9Ghosh" className='tooltip tooltip-top' data-tip="Facebook" target="_blank" rel="noreferrer"  data-aos="fade-up" data-aos-duration="900"><BsFacebook /></a>
+                     <a href="https://www.facebook.com/protapkrghosh" className='tooltip tooltip-top' data-tip="Facebook" target="_blank" rel="noreferrer"  data-aos="fade-up" data-aos-duration="900"><BsFacebook /></a>
 
-                     <a href="https://www.twitter.com/Protap9Ghosh" className='tooltip tooltip-top' data-tip="Twitter" target="_blank" rel="noreferrer"  data-aos="fade-up" data-aos-duration="1100"><BsTwitter /></a>
+                     <a href="https://www.twitter.com/protapkrghosh" className='tooltip tooltip-top' data-tip="Twitter" target="_blank" rel="noreferrer"  data-aos="fade-up" data-aos-duration="1100"><BsTwitter /></a>
 
                      <a href="https://wa.me/1790287567" className='tooltip tooltip-top' data-tip="Whatsapp" target="_blank" rel="noreferrer"  data-aos="fade-up" data-aos-duration="1300"><BsWhatsapp /></a>
 
                      <a href="https://www.linkedin.com" className='tooltip tooltip-top' data-tip="Linkedin" target="_blank" rel="noreferrer"  data-aos="fade-up" data-aos-duration="1500"><BsLinkedin /></a>
 
-                     <a href="https://www.github.com/Protap9Ghosh" className='tooltip tooltip-top' data-tip="GitHub" target="_blank" rel="noreferrer"  data-aos="fade-up" data-aos-duration="1800"><BsGithub /></a>
+                     <a href="https://www.github.com/protapkrghosh" className='tooltip tooltip-top' data-tip="GitHub" target="_blank" rel="noreferrer"  data-aos="fade-up" data-aos-duration="1800"><BsGithub /></a>
                   </div>
                </div>
 
