@@ -15,3 +15,11 @@
    background-color: #79879262;
    border-radius: 10px;
 }
+
+* {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
