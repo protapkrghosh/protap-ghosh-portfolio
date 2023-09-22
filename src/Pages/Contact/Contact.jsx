@@ -54,7 +54,7 @@ const Contact = () => {
 
               <div className="text-lg flex items-center" data-aos="fade-up" data-aos-duration="1500">
                 <p className='icon mr-3 text-2xl text-[#20c997]'><MdLocationPin /></p>
-                <p className='text-[#D3E3E4]'>Satkhira, Bangladesh</p>
+                <p className='text-[#D3E3E4]'>Khulna, Bangladesh</p>
               </div>
             </div>
 
