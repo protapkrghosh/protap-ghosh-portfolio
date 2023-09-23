@@ -21,7 +21,7 @@ const Banner = () => {
   }, []);
 
   const [text] = useTypewriter({
-    words: ['MERN Stack Developer', 'Font-end Developer', 'Junior Web Developer'],
+    words: ['Full Stack Developer', 'Junior Web Developer', 'MERN Stack Developer', 'Font-end Developer'],
     loop: {},
   });
 
@@ -47,7 +47,7 @@ const Banner = () => {
             </h2>
 
             <p className='lg:w-4/5 text-[18px] font-semibold'>
-              As a self-taught programmer, I have honed my skills in the MERN stack, demonstrating proficiency in JavaScript, HTML, and CSS. I possess a strong understanding of these technologies and strive to stay updated with the latest industry trends and advancements. My commitment to continuous learning allows me to adapt to evolving programming practices.
+              As a self-taught programmer, I have honed my skills in the Full Stack, demonstrating proficiency in JavaScript, HTML, CSS, React, and Next.Js. I possess a strong understanding of these technologies and strive to stay updated with the latest industry trends and advancements. My commitment to continuous learning allows me to adapt to evolving programming practices.
             </p>
 
             <a href="#contact" className='btn btn-outline border-[#20C997] hover:border-[#20C997] text-[16px] text-[#20C997] capitalize border-2 rounded-full px-8 mt-8 hover:bg-[#20C997]'>Hire Me</a>
@@ -61,7 +61,7 @@ const Banner = () => {
                 <img src={image} alt="Image" />
                 <div className='text'>
                   <h2 className='relative text-3xl font-bold uppercase'>Protap Ghosh <br />
-                    <span className='text-base font-semibold'>MERN Stack Developer</span>
+                    <span className='text-base font-semibold'>Full Stack Developer</span>
                   </h2>
                   <a href="#contact" className='btn btn-outline border-[#6C757D] hover:border-[#6C757D] text-[16px] text-[#6C757D] capitalize border-2 rounded-full px-8 mt-5 hover:bg-[#6C757D]'>Hire Me</a>
                 </div>
