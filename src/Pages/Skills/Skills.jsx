@@ -16,187 +16,143 @@ import image12 from "../../assets/tech-skill/canva.png"
 import image13 from "../../assets/tech-skill/Figma.png"
 import image14 from "../../assets/tech-skill/GitHub.png"
 import image15 from "../../assets/tech-skill/vscode.png"
+import image16 from "../../assets/tech-skill/Nextjs.png"
+import image17 from "../../assets/tech-skill/jest.png"
 
 const Skills = () => {
-   return (
-      <div className='bg-[#212529] pt-10 pb-16' id='skills'>
-         <Container>
-            <div className="text-center tech-skill" data-aos="fade-up" data-aos-duration="1000">
-               <h1 className="summary">Summary</h1>
-               <h2 className="skill">My Skill</h2>
-               <hr />
+  return (
+    <div className='bg-[#212529] pt-10 pb-16' id='skills'>
+      <Container>
+        <div className="text-center tech-skill" data-aos="fade-up" data-aos-duration="1000">
+          <h1 className="summary">Summary</h1>
+          <h2 className="skill">My Skill</h2>
+          <hr />
+        </div>
+
+        <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-7 gap-5 pt-5'>
+
+          <div className='skill-card p-3' data-aos="fade-right" data-aos-duration="1500">
+            <div>
+              <img src={image1} alt="HTML" className='w-16 mx-auto mb-2' />
+              <h2 className='text-[18px] text-[#908F91] font-semibold text-center'>HTML5</h2>
             </div>
+          </div>
 
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 pt-5'>
-
-               <div className='skill-card p-3' data-aos="fade-right" data-aos-duration="1500">
-                  <div className='pr-3'>
-                     <img src={image1} alt="" className='w-40'/>
-                  </div>
-
-                  <div className='text-[#908F91] card-text'>
-                     <h2 className='text-[20px] font-bold'>HTML5</h2>
-                     <p className='italic'>HTML is the standard markup language for creating the structure and content of web pages.</p>
-                  </div>
-               </div>
-
-               <div className='skill-card p-3' data-aos="fade-up" data-aos-duration="1500">
-                  <div className='pr-3'>
-                     <img src={image2} alt="" className='w-48'/>
-                  </div>
-
-                  <div className='text-[#908F91] card-text'>
-                     <h2 className='text-[20px] font-bold'>Bootstrap</h2>
-                     <p className='italic'>Bootstrap is a free, open source front-end development framework for the creation of websites and web apps.</p>
-                  </div>
-               </div>
-
-               <div className='skill-card p-3' data-aos="zoom-in" data-aos-duration="1500">
-                  <div className='pr-3'>
-                     <img src={image4} alt="" className='w-48'/>
-                  </div>
-
-                  <div className='text-[#908F91] card-text'>
-                     <h2 className='text-[20px] font-bold'>Firebase</h2>
-                     <p className='italic'>Firebase is a comprehensive backend-as-a-service platform by Google that offers a suite services</p>
-                  </div>
-               </div>
-
-               <div className='skill-card p-3' data-aos="fade-up" data-aos-duration="1500">
-                  <div className='pr-3'>
-                     <img src={image5} alt="" className='w-48'/>
-                  </div>
-
-                  <div className='text-[#908F91] card-text'>
-                     <h2 className='text-[20px] font-bold'>CSS3</h2>
-                     <p className='italic'>CSS is a styling language used to describe the presentation and visual appearance of HTML elements.</p>
-                  </div>
-               </div>
-
-               <div className='skill-card p-3' data-aos="zoom-in-down" data-aos-duration="1500">
-                  <div className='pr-3'>
-                     <img src={image6} alt="" className='w-36'/>
-                  </div>
-
-                  <div className='text-[#908F91] card-text'>
-                     <h2 className='text-[20px] font-bold'>Node Js</h2>
-                     <p className='italic'>Node.js is a runtime environment that allows server-side JavaScript execution.</p>
-                  </div>
-               </div>
-
-               <div className='skill-card p-3' data-aos="flip-left" data-aos-duration="1500">
-                  <div className='pr-3'>
-                     <img src={image7} alt="" className='w-48'/>
-                  </div>
-
-                  <div className='text-[#908F91] card-text'>
-                     <h2 className='text-[20px] font-bold'>MongoDB</h2>
-                     <p className='italic'>MongoDB is a scalable and flexible NoSQL database that stores data in JSON.</p>
-                  </div>
-               </div>
-
-               <div className='skill-card p-3' data-aos="zoom-in-up" data-aos-duration="1500">
-                  <div className='pr-3'>
-                     <img src={image8} alt="" className='w-44'/>
-                  </div>
-
-                  <div className='text-[#908F91] card-text'>
-                     <h2 className='text-[20px] font-bold'>React</h2>
-                     <p className='italic'>React.js is a powerful JavaScript library for building user interfaces with component-based architecture.</p>
-                  </div>
-               </div>
-
-               <div className='skill-card p-3' data-aos="zoom-in" data-aos-duration="1500">
-                  <div className='pr-3'>
-                     <img src={image3} alt="" className='w-40' />
-                  </div>
-
-                  <div className='text-[#908F91] card-text'>
-                     <h2 className='text-[20px] font-bold'>Express Js</h2>
-                     <p className='italic'>Express.js is a minimalistic and flexible web application framework for Node.js.</p>
-                  </div>
-               </div>
-               
-               <div className='skill-card p-3' data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1r00">
-                  <div className='pr-3'>
-                     <img src={image9} alt="" className='w-48'/>
-                  </div>
-
-                  <div className='text-[#908F91] card-text'>
-                     <h2 className='text-[20px] font-bold'>Tailwind</h2>
-                     <p className='italic'>Tailwind CSS is a utility-first CSS framework that provides a wide range of pre-built classes.</p>
-                  </div>
-               </div>
-
-               <div className='skill-card p-3' data-aos="fade-down" data-aos-duration="1500">
-                  <div className='pr-3'>
-                     <img src={image10} alt="" className='w-48'/>
-                  </div>
-
-                  <div className='text-[#908F91] card-text'>
-                     <h2 className='text-[20px] font-bold'>Git</h2>
-                     <p className='italic'>Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.</p>
-                  </div>
-               </div>
-
-               <div className='skill-card p-3'  data-aos="fade-right" data-aos-duration="1500">
-                  <div className='pr-3'>
-                     <img src={image11} alt="" className='w-56'/>
-                  </div>
-
-                  <div className='text-[#908F91] card-text'>
-                     <h2 className='text-[20px] font-bold'>Javascript</h2>
-                     <p className='italic'>JavaScript is a scripting language that enables you to create dynamically updating content, control multimedia, animate images, and pretty much.</p>
-                  </div>
-               </div>
-
-               <div className='skill-card p-3' data-aos="zoom-in" data-aos-duration="1500">
-                  <div className='pr-3'>
-                     <img src={image12} alt="" className='w-44'/>
-                  </div>
-
-                  <div className='text-[#908F91] card-text'>
-                     <h2 className='text-[20px] font-bold'>Canva</h2>
-                     <p className='italic'>Canva is a user-friendly graphic design platform that enables users to create professional-looking designs.</p>
-                  </div>
-               </div>
-
-               <div className='skill-card p-3' data-aos="fade-up-right" data-aos-duration="1500">
-                  <div className='pr-3'>
-                     <img src={image13} alt="" className='w-44'/>
-                  </div>
-
-                  <div className='text-[#908F91] card-text'>
-                     <h2 className='text-[20px] font-bold'>Figma</h2>
-                     <p className='italic'>Figma is a collaborative and cloud-based design tool that empowers teams to create.</p>
-                  </div>
-               </div>
-
-               <div className='skill-card p-3'  data-aos="zoom-in" data-aos-duration="1500">
-                  <div className='pr-3'>
-                     <img src={image14} alt="" className='w-48'/>
-                  </div>
-
-                  <div className='text-[#908F91] card-text'>
-                     <h2 className='text-[20px] font-bold'>GitHub</h2>
-                     <p className='italic'>GitHub is a for-profit company that offers a cloud-based Git repository hosting service. This is version control for individuals and teams.</p>
-                  </div>
-               </div>
-
-               <div className='skill-card p-3' data-aos="flip-right" data-aos-duration="1500">
-                  <div className='pr-3'>
-                     <img src={image15} alt="" className='w-48'/>
-                  </div>
-
-                  <div className='text-[#908F91] card-text'>
-                     <h2 className='text-[20px] font-bold'>VsCode</h2>
-                     <p className='italic'>Visual Studio Code is a code editor redefined and optimized for building and debugging modern web and cloud applications.</p>
-                  </div>
-               </div>
+          <div className='skill-card p-3' data-aos="fade-up" data-aos-duration="1500">
+            <div>
+              <img src={image2} alt="Bootstrap" className='w-16 mx-auto mb-3' />
+              <h2 className='text-[18px] text-[#908F91] font-semibold text-center'>Bootstrap</h2>
             </div>
-         </Container>
-      </div>
-   );
+          </div>
+
+          <div className='skill-card p-3' data-aos="flip-left" data-aos-duration="1500">
+            <div>
+              <img src={image3} alt="Express" className='w-16 mx-auto mb-2' />
+              <h2 className='text-[18px] text-[#908F91] font-semibold text-center'>Express Js</h2>
+            </div>
+          </div>
+
+          <div className='skill-card p-3' data-aos="zoom-in" data-aos-duration="1500">
+            <div>
+              <img src={image4} alt="Firebase" className='w-16 mx-auto mb-2' />
+              <h2 className='text-[18px] text-[#908F91] font-semibold text-center'>Firebase</h2>
+            </div>
+          </div>
+
+          <div className='skill-card p-3' data-aos="fade-down" data-aos-duration="1500">
+            <div>
+              <img src={image5} alt="CSS3" className='w-16 mx-auto mb-2' />
+              <h2 className='text-[18px] text-[#908F91] font-semibold text-center'>CSS3</h2>
+            </div>
+          </div>
+
+          <div className='skill-card p-3' data-aos="fade-up-right" data-aos-duration="1500">
+            <div>
+              <img src={image6} alt="Node" className='w-14 mx-auto mb-2' />
+              <h2 className='text-[18px] text-[#908F91] font-semibold text-center'>Node Js</h2>
+            </div>
+          </div>
+
+          <div className='skill-card p-3' data-aos="zoom-in-up" data-aos-duration="1500">
+            <div>
+              <img src={image7} alt="MongoDB" className='w-16 mx-auto mb-2' />
+              <h2 className='text-[18px] text-[#908F91] font-semibold text-center'>MongoDB</h2>
+            </div>
+          </div>
+
+          <div className='skill-card p-3' data-aos="fade-right" data-aos-duration="1500">
+            <div>
+              <img src={image8} alt="React" className='w-14 mx-auto mb-2' />
+              <h2 className='text-[18px] text-[#908F91] font-semibold text-center'>React</h2>
+            </div>
+          </div>
+
+          <div className='skill-card p-3' data-aos="fade-up" data-aos-duration="1500">
+            <div>
+              <img src={image10} alt="Git" className='w-14 mx-auto mb-2' />
+              <h2 className='text-[18px] text-[#908F91] font-semibold text-center'>Git</h2>
+            </div>
+          </div>
+
+          <div className='skill-card p-3' data-aos="zoom-out" data-aos-duration="1500">
+            <div>
+              <img src={image9} alt="Tailwind" className='w-20 mx-auto mb-2' />
+              <h2 className='text-[18px] text-[#908F91] font-semibold text-center'>Tailwind CSS</h2>
+            </div>
+          </div>
+
+          <div className='skill-card p-3' data-aos="flip-right" data-aos-duration="1500">
+            <div>
+              <img src={image11} alt="JavaScript" className='w-14 mx-auto mb-2' />
+              <h2 className='text-[18px] text-[#908F91] font-semibold text-center'>JavaScript</h2>
+            </div>
+          </div>
+
+          <div className='skill-card p-3' data-aos="fade-down" data-aos-duration="1500">
+            <div>
+              <img src={image12} alt="Canva" className='w-14 mx-auto mb-2' />
+              <h2 className='text-[18px] text-[#908F91] font-semibold text-center'>Canva</h2>
+            </div>
+          </div>
+
+          <div className='skill-card p-3' data-aos="zoom-in" data-aos-duration="1500">
+            <div>
+              <img src={image13} alt="Figma" className='w-14 mx-auto mb-2' />
+              <h2 className='text-[18px] text-[#908F91] font-semibold text-center'>Figma</h2>
+            </div>
+          </div>
+
+          <div className='skill-card p-3' data-aos="fade-up" data-aos-duration="1500">
+            <div>
+              <img src={image14} alt="GitHub" className='w-16 mx-auto mb-2' />
+              <h2 className='text-[18px] text-[#908F91] font-semibold text-center'>GitHub</h2>
+            </div>
+          </div>
+
+          <div className='skill-card p-3' data-aos="zoom-out-left" data-aos-duration="1500">
+            <div>
+              <img src={image15} alt="Vscode" className='w-16 mx-auto mb-2' />
+              <h2 className='text-[18px] text-[#908F91] font-semibold text-center'>VS Code</h2>
+            </div>
+          </div>
+
+          <div className='skill-card p-3' data-aos="flip-up" data-aos-duration="1500">
+            <div>
+              <img src={image16} alt="Next" className='mx-auto' />
+              <h2 className='text-[18px] text-[#908F91] font-semibold text-center'>Next Js</h2>
+            </div>
+          </div>
+
+          <div className='skill-card p-3' data-aos="zoom-in-up" data-aos-duration="1500">
+            <div>
+              <img src={image17} alt="Jest" className='w-14 mx-auto mb-2' />
+              <h2 className='text-[18px] text-[#908F91] font-semibold text-center'>Jest</h2>
+            </div>
+          </div>
+        </div>
+      </Container>
+    </div>
+  );
 };
 
 export default Skills;

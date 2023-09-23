@@ -38,18 +38,18 @@
    gap: 30px;
 }
 
-/* Clever Cookie */
-.clever {
+/* MeetPlanr */
+.meet {
    background-color: #262a2e;
    transition: ease-in-out 5s;
 }
 
-.clever.clever-cookie {
-   background: url(../../assets/clever-cookie/clever-cookie.png);
+.meet.meet-planr {
+   background: url(../../assets/meetplanr/MeetPlanr.png);
    background-size: cover;
 }
 
-.clever:hover {
+.meet:hover {
    background-position: bottom;
 }
 
