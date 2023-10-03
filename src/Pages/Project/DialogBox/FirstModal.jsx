@@ -72,7 +72,7 @@ const FirstModal = () => {
           <h3 className="text-xl font-semibold mt-5 my-2">Source Code</h3>
           <div className="flex items-center space-x-5 source-code text-2xl text-[#a1a8af]">
             <a href="https://github.com/gsjoy24/MeetPlanr" className="hover:text-[#20c997] tooltip tooltip-bottom" data-tip="View Code" target="_blank" rel="noreferrer"><FaGithub /></a>
-            <a href="https://meet-planr.vercel.app" className="hover:text-[#20c997] tooltip tooltip-bottom" data-tip="Live Site" target="_blank" rel="noreferrer"><HiOutlineLink /></a>
+            <a href="https://meetplanr.vercel.app" className="hover:text-[#20c997] tooltip tooltip-bottom" data-tip="Live Site" target="_blank" rel="noreferrer"><HiOutlineLink /></a>
           </div>
         </div>
 

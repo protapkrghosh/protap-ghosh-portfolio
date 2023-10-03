@@ -28,7 +28,7 @@ const Project = () => {
               <div className="card-actions justify-between items-center mt-5">
                 <div className="flex justify-center items-center space-x-5 source-code">
                   <a href="https://github.com/gsjoy24/MeetPlanr" className="text-xl text-[#a1a8af] hover:text-[#20c997] tooltip" data-tip="View Code" target="_blank" rel="noreferrer"><FaGithub /></a>
-                  <a href="https://meet-planr.vercel.app" className="text-xl text-[#a1a8af] hover:text-[#20c997] tooltip" data-tip="Live Site" target="_blank" rel="noreferrer"><HiOutlineLink /></a>
+                  <a href="https://meetplanr.vercel.app" className="text-xl text-[#a1a8af] hover:text-[#20c997] tooltip" data-tip="Live Site" target="_blank" rel="noreferrer"><HiOutlineLink /></a>
                 </div>
 
                 <button onClick={() => window.meet_planr.showModal()} className='btn btn-sm btn-outline border-[#9199a0] hover:border-[#9199a0] text-[16px] text-[#9199a0] capitalize border-2 rounded-full px-5 hover:bg-[#6C757D]'><BsFillEyeFill /> Details</button>
