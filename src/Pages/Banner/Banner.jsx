@@ -26,7 +26,7 @@ const Banner = () => {
   });
 
   const handleDownload = () => {
-    window.open('https://drive.google.com/u/1/uc?id=1ALr0WK_BpMJVK1m5pSzv_7R2QYxMhefH&export=download', '_parent');
+    window.open('https://drive.google.com/u/1/uc?id=1xRWSXTv3n0YHHEz5875zBqxsWb_8Mlzx&export=download', '_parent');
   }
 
   return (
