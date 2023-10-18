@@ -6,7 +6,7 @@ import './AboutMe.css'
 
 const AboutMe = () => {
   const handleDownload = () => {
-    window.open('https://drive.google.com/u/1/uc?id=1Q7wzCfqI_aT_PwkPPqWC12cne-o9u_79&export=download', '_parent');
+    window.open('https://drive.google.com/u/1/uc?id=1xRWSXTv3n0YHHEz5875zBqxsWb_8Mlzx&export=download', '_parent');
   }
 
   return (
