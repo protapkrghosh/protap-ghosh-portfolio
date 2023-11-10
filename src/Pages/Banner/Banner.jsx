@@ -21,7 +21,7 @@ const Banner = () => {
   }, []);
 
   const [text] = useTypewriter({
-    words: ['Full Stack Developer', 'Junior Web Developer', 'MERN Stack Developer', 'Font-end Developer'],
+    words: ['Full Stack Developer', 'Jr Web Developer', 'MERN Stack Developer', 'Font-end Developer'],
     loop: {},
   });
 
@@ -50,7 +50,7 @@ const Banner = () => {
               As a self-taught programmer, I have honed my skills in the Full Stack, demonstrating proficiency in JavaScript, HTML, CSS, React, and Next.Js. I possess a strong understanding of these technologies and strive to stay updated with the latest industry trends and advancements. My commitment to continuous learning allows me to adapt to evolving programming practices.
             </p>
 
-            <a href="#contact" className='btn btn-outline border-[#20C997] hover:border-[#20C997] text-[16px] text-[#20C997] capitalize border-2 rounded-full px-8 mt-8 hover:bg-[#20C997]'>Hire Me</a>
+            <a href="#contact" className='btn btn-outline border-[#20C997] hover:border-[#20C997] text-[16px] text-[#20C997] hover:text-[#20C997] capitalize border-2 rounded-full px-8 mt-8 hover:bg-[#20c99633]'>Hire Me</a>
 
             <button onClick={handleDownload} className='btn border-none text-[16px] text-white capitalize border-2 rounded-full px-8 mt-8 ms-5 bg-[#20C997] hover:bg-[#1BAA80]'>Resume <FaDownload /></button>
           </div>
@@ -115,10 +115,10 @@ const Banner = () => {
           },
           particles: {
             color: {
-              value: "#00ccff",
+              value: "#00ccff27",
             },
             links: {
-              color: "#20C997",
+              color: "#20c9962c",
               distance: 150,
               enable: true,
               opacity: 0.5,
