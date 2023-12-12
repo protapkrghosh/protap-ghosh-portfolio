@@ -71,7 +71,7 @@ const Banner = () => {
         </div>
       </Container>
 
-      <Particles
+      {/* <Particles
         id="tsparticles"
         init={particlesInit}
         loaded={particlesLoaded}
@@ -156,7 +156,7 @@ const Banner = () => {
           },
           detectRetina: true,
         }}
-      />
+      /> */}
 
       {/* Scroll Down Animation */}
       <a href="#about-me">
