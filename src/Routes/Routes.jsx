@@ -6,10 +6,10 @@ import NotFound from "../Pages/NotFound/NotFound";
 export const router = createBrowserRouter([
    {
       path: "/",
-      element: <Main></Main>,
+      element: <Main />,
    },
    {
       path: "*",
-      element: <NotFound></NotFound>
+      element: <NotFound />
    }
 ]);

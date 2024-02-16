@@ -1,38 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Manrope:wght@400;500;600;700;800&display=swap');
 
-/* Skill Header */
-.tech-skill {
-   position: relative;
-}
-
-.summary {
-   color: #292D32;
-   font-size: 128px;
-   font-weight: bold;
-   text-transform: uppercase;
-}
-
-.skill {
-   color: #ffffff;
-   font-size: 40px;
-   font-weight: bold;
-   position: absolute;
-   top: 35%;
-   left: 45%;
-}
-
-.tech-skill hr {
-   width: 5em;
-   background: #20C997;
-   border-top: 0;
-   border-left: 0;
-   border-right: 0;
-   padding: 2px;
-   position: absolute;
-   top: 71%;
-   left: 48%;
-}
-
 /* Skills card */
 .skill-card {
    display: flex;
@@ -48,49 +15,3 @@
 .skill-card:hover {
    box-shadow: 0.5px 0.5px 6px 1px #20C997;
 }
-
-.skill-card img {
-   transition: 0.3s all ease-in-out;
-}
-
-.skill-card:hover img {
-   transform: scale(1.1)
-}
-
-/* Responsive */
-@media only screen and (max-width: 768px) {
-   .summary {
-      font-size: 90px;
-   }
-
-   .skill {
-      font-size: 30px;
-      top: 31%;
-      left: 36%;
-   }
-
-   .tech-skill hr {
-      top: 70%;
-      left: 47%;
-   }
-}
-
-@media only screen and (max-width: 576px) {
-   .summary {
-      font-size: 60px;
-   }
-
-   .skill {
-      font-size: 20px;
-      top: 29%;
-      left: 43%;
-   }
-
-   .tech-skill hr {
-      width: 4em;
-      top: 66%;
-      left: 44%;
-   }
-}
-
-
