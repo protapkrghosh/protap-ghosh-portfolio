@@ -1,6 +1,6 @@
 import { FaDownload } from "react-icons/fa";
 import Container from "../../Components/Container";
-import image from "../../assets/image/ProtapGhosh-transparent-pass.png"
+import image from "../../assets/image/professional_protap.png"
 import CountUp from "react-countup";
 import './AboutMe.css'
 
@@ -20,7 +20,7 @@ const AboutMe = () => {
 
         <div className="md:flex items-center mt-5">
           <div className="md:w-1/2 mb-10" data-aos="zoom-in-up" data-aos-duration="1500">
-            <img src={image} alt="Image" className="border-2 border-[#20c99636] w-[350px] h-[400px] rounded-xl mx-auto shadow-lg shadow-[#20c996ab]" />
+            <img src={image} alt="Image" loading="lazy" className="border-2 border-[#20c99636] w-[350px] h-[380px] rounded-xl mx-auto shadow-lg shadow-[#20c996ab]" />
           </div>
 
           <div className="md:w-1/2" data-aos="fade-up" data-aos-duration="1500">
@@ -38,8 +38,9 @@ const AboutMe = () => {
               <div>
                 <span className="text-[#909294] text-5xl font-bold">
                   <CountUp
+                    start={0}
                     end={1}
-                    duration={5}
+                    duration={8}
                   />+
                 </span>
                 <p className="text-white text-xl">Years Experiance</p>
@@ -48,7 +49,7 @@ const AboutMe = () => {
               <div>
                 <span className="text-[#909294] text-5xl font-bold">
                   <CountUp
-                    end={20}
+                    end={23}
                     duration={5}
                   />+
                 </span>
@@ -58,7 +59,7 @@ const AboutMe = () => {
               <div>
                 <span className="text-[#909294] text-5xl font-bold">
                   <CountUp
-                    end={4}
+                    end={5}
                     duration={8}
                   />+
                 </span>

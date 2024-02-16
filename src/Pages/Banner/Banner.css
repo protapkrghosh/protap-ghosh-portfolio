@@ -32,7 +32,7 @@
    inset: -10px 140px;
    background: linear-gradient(315deg, #00ccff, #1BAA80);
    transition: 0.5s;
-   animation: animate 4s linear infinite;
+   animation: animate 7s linear infinite;
 }
 
 .box:hover::before {

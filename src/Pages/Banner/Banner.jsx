@@ -1,7 +1,7 @@
 import { useCallback } from "react";
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import Container from '../../Components/Container';
-import image from "../../assets/image/protap-ghosh.png"
+import image from "../../assets/image/professional protap.png"
 import './Banner.css'
 import { FaDownload } from 'react-icons/fa';
 import Particles from "react-tsparticles";
@@ -21,7 +21,7 @@ const Banner = () => {
   }, []);
 
   const [text] = useTypewriter({
-    words: ['Full Stack Developer', 'Jr Web Developer', 'MERN Stack Developer', 'Font-end Developer'],
+    words: ['Font-end Developer', 'MERN Stack Developer', 'Full Stack Developer', 'Jr. Web Developer'],
     loop: {},
   });
 
@@ -58,7 +58,7 @@ const Banner = () => {
           <div className='banner-image' data-aos="fade-left" data-aos-duration="1500">
             <div className='box'>
               <div className='content'>
-                <img src={image} alt="Image" />
+                <img src={image} alt="Image" loading="lazy" className="scale-105 mt-2" />
                 <div className='text'>
                   <h2 className='relative text-3xl font-bold uppercase'>Protap Ghosh <br />
                     <span className='text-base font-semibold'>Full Stack Developer</span>

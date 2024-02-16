@@ -12,7 +12,7 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs.sendForm('service_k8qkxfs', 'template_t6cr9hq', form.current, 'nj9k-mWuTTMyvDuKy')
+    emailjs.sendForm('service_vmaqmbb', 'template_t6cr9hq', form.current, 'IpvOMSn9dt5ZiyEbH')
       .then((result) => {
         // console.log(result.text);
         toast.success("Sending your message successful");
@@ -78,20 +78,20 @@ const Contact = () => {
             <form ref={form} onSubmit={sendEmail}>
               <div className="input-field mt-8" data-aos="fade-up" data-aos-duration="800">
                 <div className="form-control">
-                  <input type="text" name="user_name" placeholder="Michael David" className="input rounded-md text-[#a7adb3] bg-[#3A4046] focus:border-[#20c997]" required />
+                  <input type="text" name="user_name" placeholder="Michael David" className="input rounded-md text-[#a7adb3] bg-[#3A4046] focus:border-[#20c99696]" required />
                 </div>
 
                 <div className="form-control">
-                  <input type="email" name="user_email" placeholder="example@gmail.com" className="input rounded-md text-[#a7adb3] bg-[#3A4046] focus:border-[#20c997]" required />
+                  <input type="email" name="user_email" placeholder="example@gmail.com" className="input rounded-md text-[#a7adb3] bg-[#3A4046] focus:border-[#20c99696]" required />
                 </div>
               </div>
 
               <div className="form-control my-7" data-aos="fade-up" data-aos-duration="1000">
-                <input type="text" name="subject" placeholder="Subject" className="input rounded-md text-[#a7adb3] bg-[#3A4046] focus:border-[#20c997]" required />
+                <input type="text" name="subject" placeholder="Subject" className="input rounded-md text-[#a7adb3] bg-[#3A4046] focus:border-[#20c99696]" required />
               </div>
 
               <div className="form-control" data-aos="fade-up" data-aos-duration="1300">
-                <textarea name="message" className="textarea rounded-md h-40 text-[17px] text-[#a7adb3] bg-[#3A4046] focus:border-[#20c997]" placeholder="Write your message" required></textarea>
+                <textarea name="message" className="textarea rounded-md h-40 text-[17px] text-[#a7adb3] bg-[#3A4046] focus:border-[#20c99696]" placeholder="Write your message" required></textarea>
               </div>
 
               <div className="send-btn" data-aos="fade-up" data-aos-duration="1300">
