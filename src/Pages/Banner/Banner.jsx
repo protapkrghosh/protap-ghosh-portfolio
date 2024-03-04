@@ -1,7 +1,8 @@
 import { useCallback } from "react";
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import Container from '../../Components/Container';
-import image from "../../assets/image/professional protap.png"
+import image from "../../assets/image/ProtapGhosh-transparent-pass.png"
+import avatar from "../../assets/image/IMG3.jpg"
 import './Banner.css'
 import { FaDownload } from 'react-icons/fa';
 import Particles from "react-tsparticles";
@@ -9,6 +10,7 @@ import { loadFull } from "tsparticles";
 import ScrollToTop from "react-scroll-to-top";
 import NavBar from "../../Shared/NavBar/NavBar";
 import Headroom from "react-headroom";
+import { FloatingWhatsApp } from "react-floating-whatsapp";
 
 const Banner = () => {
   const particlesInit = useCallback(async engine => {
@@ -164,7 +166,13 @@ const Banner = () => {
       </a>
 
       {/* Scroll Up */}
-      <ScrollToTop smooth top="400" style={{ backgroundColor: "#20c99685", display: "flex", justifyContent: "center", alignItems: "center", borderRadius: "50%", padding: "10px" }} />
+      {/* <ScrollToTop smooth top="400" style={{ backgroundColor: "#20c99685", display: "flex", justifyContent: "center", alignItems: "center", borderRadius: "50%", padding: "10px" }} /> */}
+
+      <FloatingWhatsApp
+        accountName='+880 1790287567'
+        allowClickAway={true}
+        avatar={avatar}
+      />
     </div>
   );
 };
