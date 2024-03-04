@@ -1,30 +1,51 @@
+import { Link } from 'react-scroll';
+import { FaSquare } from "react-icons/fa";
+import logo from "../../assets/image/logo.png"
+import { useState } from 'react';
 
 const NavBar = () => {
+  const [color, setColor] = useState(false);
+
+  if (typeof window !== 'undefined') {
+    const changeColor = () => {
+      if (window?.scrollY >= 50) {
+        setColor(true);
+      } else {
+        setColor(false);
+      }
+    };
+    window.addEventListener('scroll', changeColor);
+  }
+
   const navItems = <>
-    <a href="#home" className='relative group'>
+    <Link to="home" className='relative group cursor-pointer' smooth={true} offset={-130} duration={700}>
       Home
       <span className="absolute top-5 left-0 w-full h-[2px] bg-[#20c997] origin-left scale-x-0 transition-transform group-hover:scale-x-100"></span>
-    </a>
-    <a href="#home" className='relative group'>
+    </Link>
+
+    <Link to="skills" className='relative group cursor-pointer' smooth={true} offset={0} duration={700}>
       Skills
       <span className="absolute top-5 left-0 w-full h-[2px] bg-[#20c997] origin-left scale-x-0 transition-transform group-hover:scale-x-100"></span>
-    </a>
-    <a href="#project" className='relative group'>
+    </Link>
+
+    <Link to="project" className='relative group cursor-pointer' smooth={true} offset={0} duration={700}>
       Project
       <span className="absolute top-5 left-0 w-full h-[2px] bg-[#20c997] origin-left scale-x-0 transition-transform group-hover:scale-x-100"></span>
-    </a>
-    <a href="#about-me" className='relative group'>
+    </Link>
+
+    <Link to="aboutMe" className='relative group cursor-pointer' smooth={true} offset={0} duration={700}>
       About
       <span className="absolute top-5 left-0 w-full h-[2px] bg-[#20c997] origin-left scale-x-0 transition-transform group-hover:scale-x-100"></span>
-    </a>
-    <a href="#contact" className='relative group'>
+    </Link>
+
+    <Link to="contact" className='relative group cursor-pointer' smooth={true} offset={0} duration={700}>
       Contact
       <span className="absolute top-5 left-0 w-full h-[2px] bg-[#20c997] origin-left scale-x-0 transition-transform group-hover:scale-x-100"></span>
-    </a>
+    </Link>
   </>
 
   return (
-    <div className="navbar bg-[#070a1c6b] max-w-[2520px] mx-auto xl:px-16 md:px-10 sm:px-8 px-4">
+    <div className={`navbar max-w-[2520px] mx-auto xl:px-14 md:px-10 sm:px-8 px-4 ${color ? 'bg-[#070a1ce0]' : "bg-[#070a1c5b]"}`}>
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -36,7 +57,14 @@ const NavBar = () => {
           </ul>
         </div>
 
-        <a href='#home' className="normal-case font-[Poppins] text-3xl md:text-4xl font-bold">Protap Ghosh</a>
+        {/* <a href='#home' className="font-bold uppercase flex items-end relative">
+          <span className='text-3xl md:text-[42px]'>P</span>
+          <FaSquare className='text-[8px] absolute right-0'/>
+        </a> */}
+
+        <Link to="home" smooth={true} offset={0} duration={700}>
+          <img src={logo} alt="Image" className='w-[60px] cursor-pointer' />
+        </Link>
       </div>
 
       <div className="navbar-end hidden lg:flex">

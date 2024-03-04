@@ -10,7 +10,7 @@ const AboutMe = () => {
   }
 
   return (
-    <div className="bg-[#343A40] pt-10 pb-16" id="about-me">
+    <div className="bg-[#343A40] pt-10 pb-16" id="aboutMe">
       <Container>
         <div className="text-center about" data-aos="fade-up" data-aos-duration="1000">
           <h1 className="about-title">About Me</h1>

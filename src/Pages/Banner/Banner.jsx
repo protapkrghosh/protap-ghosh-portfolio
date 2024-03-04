@@ -11,6 +11,7 @@ import ScrollToTop from "react-scroll-to-top";
 import NavBar from "../../Shared/NavBar/NavBar";
 import Headroom from "react-headroom";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
+import { Link } from "react-scroll";
 
 const Banner = () => {
   const particlesInit = useCallback(async engine => {
@@ -38,7 +39,7 @@ const Banner = () => {
       </Headroom>
 
       <Container>
-        <div className='banner pt-20' data-aos="fade-up" data-aos-duration="1500">
+        <div className='banner flex-col-reverse md:flex-row justify-center items-center pt-20' data-aos="fade-up" data-aos-duration="1500">
           <div className="banner-content">
             <h1>Hello ! I&apos;m Protap Ghosh</h1>
             <h2>
@@ -161,14 +162,15 @@ const Banner = () => {
       /> */}
 
       {/* Scroll Down Animation */}
-      <a href="#about-me">
+      <Link to="aboutMe" smooth={true} offset={0} duration={700}>
         <div className="scroll-down"></div>
-      </a>
+      </Link>
 
       {/* Scroll Up */}
-      {/* <ScrollToTop smooth top="400" style={{ backgroundColor: "#20c99685", display: "flex", justifyContent: "center", alignItems: "center", borderRadius: "50%", padding: "10px" }} /> */}
+      {/* <ScrollToTop className="animate-bounce" smooth={true} top="3000" style={{ backgroundColor: "#20c99685", display: "flex", justifyContent: "center", alignItems: "center", borderRadius: "50%", padding: "10px" }} /> */}
 
       <FloatingWhatsApp
+        className="hidden md:block"
         accountName='+880 1790287567'
         allowClickAway={true}
         avatar={avatar}
