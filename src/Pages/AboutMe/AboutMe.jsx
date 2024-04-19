@@ -49,7 +49,7 @@ const AboutMe = () => {
               <div>
                 <span className="text-[#909294] text-5xl font-bold">
                   <CountUp
-                    end={23}
+                    end={27}
                     duration={5}
                   />+
                 </span>
@@ -59,8 +59,8 @@ const AboutMe = () => {
               <div>
                 <span className="text-[#909294] text-5xl font-bold">
                   <CountUp
-                    end={5}
-                    duration={8}
+                    end={15}
+                    duration={5}
                   />+
                 </span>
                 <p className="text-white text-xl">Happy Clients</p>
